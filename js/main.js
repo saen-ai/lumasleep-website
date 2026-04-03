@@ -1,4 +1,4 @@
-// ── DreamSound Website ──
+// ── LumaSleep Website ──
 
 (function () {
   'use strict';
