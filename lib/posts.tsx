@@ -306,6 +306,267 @@ const POSTS: Post[] = [
       </>
     ),
   },
+  {
+    slug: "how-to-build-a-bedtime-routine",
+    title: "How to Build a Bedtime Routine That Actually Sticks",
+    description:
+      "A simple, science-backed bedtime routine helps you fall asleep faster and wake up rested. Here's how to build a wind-down routine you'll actually keep.",
+    date: "2026-05-26",
+    readingMinutes: 6,
+    keywords: ["bedtime routine", "wind down routine", "sleep hygiene", "consistent sleep schedule"],
+    body: (
+      <>
+        <p>
+          The single most powerful thing you can do for your sleep isn&apos;t a gadget or a
+          supplement — it&apos;s a <strong>consistent routine</strong>. Your body runs on an
+          internal clock, and a predictable wind-down tells it that sleep is coming. The
+          catch is making a routine you&apos;ll actually keep. Here&apos;s how.
+        </p>
+
+        <h2>Start with a fixed wake-up time</h2>
+        <p>
+          Counter-intuitively, the anchor of good sleep is when you <em>wake up</em>, not
+          when you go to bed. Pick a wake time you can hold seven days a week — yes,
+          weekends too — and your bedtime will start to fall into place on its own as your
+          body adjusts.
+        </p>
+
+        <h2>Set a wind-down alarm</h2>
+        <p>
+          Most people schedule a wake alarm but nothing to signal the <em>start</em> of
+          bed. Set a gentle reminder 30–60 minutes before your target bedtime. That&apos;s
+          your cue to stop working and begin the routine — the hardest part is simply
+          starting on time.
+        </p>
+
+        <h2>Build a 30-minute wind-down</h2>
+        <p>
+          Keep it simple and repeatable. A solid template:
+        </p>
+        <ul>
+          <li><strong>Dim the lights</strong> — bright light suppresses melatonin; lower it across the house.</li>
+          <li><strong>Put screens away</strong> — or at least stop doom-scrolling; the content keeps your mind alert more than the blue light does.</li>
+          <li><strong>Do one calming thing</strong> — a warm shower, light stretching, reading, or journaling.</li>
+          <li><strong>Start your sleep sounds</strong> — the same sound each night becomes a powerful cue that it&apos;s time to sleep.</li>
+        </ul>
+
+        <h2>Make your bedroom boring (in a good way)</h2>
+        <p>
+          Cool, dark, and quiet. Aim for a cooler room temperature, block out light, and use
+          a steady background sound to mask disruptions. The more your brain associates the
+          bed only with sleep, the faster you&apos;ll drop off.
+        </p>
+
+        <h2>Give it two weeks</h2>
+        <p>
+          Routines feel pointless on night one and obvious by week two. Your circadian rhythm
+          shifts gradually, so consistency beats intensity. Don&apos;t scrap it after a rough
+          night — just repeat tomorrow.
+        </p>
+        <p>
+          LumaSleep makes the routine automatic: set a bedtime reminder to start your
+          wind-down, then drift off to the same calming sound each night with a timer that
+          fades it out once you&apos;re asleep.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "why-cant-i-sleep",
+    title: "Why Can't I Sleep? Common Causes and What Actually Helps",
+    description:
+      "Lying awake at night? Here are the most common reasons you can't sleep — from stress and screens to caffeine and routine — and practical fixes for each.",
+    date: "2026-05-25",
+    readingMinutes: 7,
+    keywords: ["why can't I sleep", "can't sleep", "trouble sleeping", "insomnia causes"],
+    body: (
+      <>
+        <p>
+          Few things are as frustrating as being exhausted but wide awake. The good news is
+          that most sleeplessness comes down to a handful of fixable causes. Here are the
+          usual suspects — and what actually helps with each.
+        </p>
+
+        <h2>1. A racing mind</h2>
+        <p>
+          Stress and an active brain are the number-one reason people can&apos;t fall asleep.
+          When your thoughts won&apos;t quiet, give them somewhere to go: write tomorrow&apos;s
+          to-do list before bed, or try a steady, enveloping sound (like brown noise or rain)
+          that gives your attention something neutral to settle on.
+        </p>
+
+        <h2>2. Caffeine later than you think</h2>
+        <p>
+          Caffeine has a half-life of roughly 5–6 hours, so an afternoon coffee can still be
+          in your system at bedtime. If you struggle to fall asleep, cut off caffeine by
+          early afternoon and see if it helps.
+        </p>
+
+        <h2>3. Screens and light</h2>
+        <p>
+          Bright light — especially from phones held close to your face — tells your brain
+          it&apos;s still daytime. Beyond the light, engaging content keeps you mentally
+          switched on. Dim your environment and put the phone down before bed.
+        </p>
+
+        <h2>4. An irregular schedule</h2>
+        <p>
+          Going to bed and waking at wildly different times confuses your body clock. A
+          consistent wake time — even on weekends — is one of the most effective fixes for
+          chronic trouble sleeping.
+        </p>
+
+        <h2>5. A noisy or restless environment</h2>
+        <p>
+          Sudden sounds jolt you out of light sleep even if you don&apos;t fully wake. A
+          steady background sound masks those interruptions so your night stays smooth.
+        </p>
+
+        <h2>6. Lying in bed awake</h2>
+        <p>
+          If you&apos;re still awake after ~20 minutes, don&apos;t force it. Get up, do
+          something calm and dim-lit, and return when you feel sleepy. Tossing and turning
+          teaches your brain that bed is a place for frustration.
+        </p>
+
+        <h2>When to seek help</h2>
+        <p>
+          The occasional bad night is normal. But if you regularly can&apos;t sleep for weeks,
+          or you&apos;re exhausted during the day despite time in bed, talk to a healthcare
+          professional — persistent insomnia is treatable and worth addressing.
+        </p>
+        <p>
+          For the everyday causes — a busy mind, a noisy room — LumaSleep can help you wind
+          down with calming sounds, AI-generated soundscapes, and a bedtime reminder to keep
+          your schedule on track.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "rain-sounds-for-sleep",
+    title: "Rain Sounds for Sleep: Why They Work So Well",
+    description:
+      "Rain sounds are the most popular sleep sound for a reason. Here's the science behind why rain helps you sleep, and how to use it for the best results.",
+    date: "2026-05-23",
+    readingMinutes: 5,
+    keywords: ["rain sounds for sleep", "rain sounds", "sleeping to rain", "rain white noise"],
+    body: (
+      <>
+        <p>
+          Ask people about their favourite sound to sleep to and rain wins almost every time.
+          It&apos;s not just nostalgia — there are real reasons rain is so effective at
+          easing you into sleep. Here&apos;s why it works, and how to get the most from it.
+        </p>
+
+        <h2>It&apos;s steady, soft, and unpredictable in the right way</h2>
+        <p>
+          Rain is a kind of natural &ldquo;pink-ish noise&rdquo; — a broad, gentle wash of
+          sound with soft random variation. That randomness is soothing rather than
+          alerting, and the steady wash masks the sudden noises that would otherwise pull you
+          awake.
+        </p>
+
+        <h2>It signals safety</h2>
+        <p>
+          There&apos;s a cosy, sheltered feeling to listening to rain from a warm, dry bed.
+          That sense of safety lowers arousal and helps your nervous system shift into
+          rest-and-digest mode — exactly the state you want for sleep.
+        </p>
+
+        <h2>It quiets a busy mind</h2>
+        <p>
+          A continuous, low-stakes sound gives your attention something neutral to rest on,
+          which can interrupt the loop of racing thoughts that keeps so many people awake.
+        </p>
+
+        <h2>Choosing your rain</h2>
+        <ul>
+          <li><strong>Light rain</strong> — barely-there texture for very light sleepers.</li>
+          <li><strong>Steady rain</strong> — the all-rounder; enough to mask most noise.</li>
+          <li><strong>Heavy rain &amp; thunder</strong> — best for blocking louder street or household sound.</li>
+          <li><strong>Rain on a roof or tent</strong> — adds a cosy, enclosed feel.</li>
+        </ul>
+
+        <h2>Get the most from it</h2>
+        <p>
+          Keep the volume moderate — loud enough to cover interruptions, not so loud it
+          becomes the focus. Use a fade-out timer so it doesn&apos;t play at full volume all
+          night. And try layering: rain under a fireplace or distant thunder makes a rich,
+          immersive scene.
+        </p>
+        <p>
+          LumaSleep has multiple rain variants — light rain, heavy rain, rain on a roof,
+          thunderstorms — plus the option to mix rain with fire, wind, or nature sounds and
+          set a timer that fades it all out once you&apos;re asleep.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "best-sounds-for-focus-and-studying",
+    title: "The Best Sounds for Focus, Studying & Deep Work",
+    description:
+      "The right background sound can sharpen concentration and block distractions. Here are the best sounds for focus, studying, and deep work — and why they help.",
+    date: "2026-05-21",
+    readingMinutes: 5,
+    keywords: ["focus music", "study sounds", "sounds for concentration", "white noise for focus"],
+    body: (
+      <>
+        <p>
+          Sound doesn&apos;t just help you sleep — the right background audio can help you
+          focus, too. Whether you&apos;re studying, coding, or trying to finish a deep-work
+          block, a steady soundscape can mask distractions and keep you in flow. Here are the
+          best options.
+        </p>
+
+        <h2>Steady noise (white, pink, brown)</h2>
+        <p>
+          Coloured noise is the most reliable focus tool because it covers the unpredictable
+          sounds — a conversation, a notification, a door — that break concentration. Many
+          people find <strong>brown noise</strong> especially good for deep work since its
+          low rumble is calming without being distracting.
+        </p>
+
+        <h2>Rain and nature</h2>
+        <p>
+          Gentle rain and nature ambience offer the masking benefit of noise with a softer,
+          more pleasant character. They&apos;re a great default for long study or work
+          sessions where flat noise might feel sterile.
+        </p>
+
+        <h2>Lo-fi and instrumental focus music</h2>
+        <p>
+          Music without lyrics keeps the language part of your brain free for the task at
+          hand. Lo-fi beats, ambient pads, and gentle classical pieces provide momentum and
+          rhythm without pulling your attention to the words.
+        </p>
+
+        <h2>Binaural and focus tones</h2>
+        <p>
+          Some people find steady tonal tracks — like alpha-wave or focus soundscapes —
+          helpful for settling into concentration. Effects vary person to person, so treat
+          it as one option to experiment with rather than a guarantee.
+        </p>
+
+        <h2>How to pick</h2>
+        <ul>
+          <li><strong>Noisy environment?</strong> Brown or white noise to block it out.</li>
+          <li><strong>Long session?</strong> Rain or nature for something easier on the ears.</li>
+          <li><strong>Need momentum?</strong> Lo-fi or instrumental focus music.</li>
+        </ul>
+        <p>
+          A quick rule: if you catch yourself listening <em>to</em> the sound, it&apos;s too
+          interesting — switch to something more neutral.
+        </p>
+        <p>
+          LumaSleep includes focus music, lo-fi, and coloured-noise tracks alongside its
+          sleep library, so the same app that helps you wind down at night can help you lock
+          in during the day.
+        </p>
+      </>
+    ),
+  },
 ];
 
 export function getAllPosts(): Post[] {
