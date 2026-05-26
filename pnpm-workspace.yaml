@@ -1,2 +1,5 @@
 allowBuilds:
   sharp: set this to true or false
+# No native build scripts are needed — the site uses CSS/SVG, not next/image,
+# so sharp's optional postinstall build is intentionally skipped.
+onlyBuiltDependencies: []
