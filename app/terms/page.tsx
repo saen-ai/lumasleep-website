@@ -51,7 +51,7 @@ export default function TermsPage() {
       <p>We may update these Terms of Service from time to time. Continued use of the App after changes constitutes acceptance of the new terms. We encourage you to review these terms periodically.</p>
 
       <h2>Contact</h2>
-      <p>If you have questions about these Terms of Service, please contact us at <a href="mailto:support@lumasleep.com">support@lumasleep.com</a>.</p>
+      <p>If you have questions about these Terms of Service, please contact us at <a href="mailto:support@lumasleep.ai">support@lumasleep.ai</a>.</p>
     </LegalShell>
   );
 }

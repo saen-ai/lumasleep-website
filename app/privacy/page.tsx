@@ -54,7 +54,7 @@ export default function PrivacyPage() {
         <li>Delete all local data by uninstalling the app.</li>
         <li>Request a copy of your data or account deletion by contacting us.</li>
       </ul>
-      <p>For data requests, contact us at <a href="mailto:support@lumasleep.com">support@lumasleep.com</a>.</p>
+      <p>For data requests, contact us at <a href="mailto:support@lumasleep.ai">support@lumasleep.ai</a>.</p>
 
       <h2>Children&apos;s Privacy</h2>
       <p>LumaSleep is not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us and we will promptly delete such information.</p>
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
       <p>We may update this Privacy Policy from time to time. Continued use of the app after changes constitutes acceptance of the updated policy. We encourage you to review this page periodically.</p>
 
       <h2>Contact</h2>
-      <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:support@lumasleep.com">support@lumasleep.com</a>.</p>
+      <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:support@lumasleep.ai">support@lumasleep.ai</a>.</p>
     </LegalShell>
   );
 }
