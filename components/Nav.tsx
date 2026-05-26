@@ -26,7 +26,7 @@ export function Nav() {
       }}
     >
       <nav className="shell flex h-16 items-center justify-between">
-        <a href="#top" aria-label={SITE.name}>
+        <a href="/" aria-label={SITE.name}>
           <Logo />
         </a>
 
@@ -45,7 +45,7 @@ export function Nav() {
 
         <div className="hidden md:block">
           <a
-            href="#download"
+            href="/#download"
             className="rounded-full bg-amber px-5 py-2.5 text-[0.9rem] font-semibold text-void transition-transform duration-300 hover:-translate-y-0.5"
             style={{ boxShadow: "0 12px 34px -14px rgba(232,168,56,0.8)" }}
           >
@@ -97,7 +97,7 @@ export function Nav() {
             ))}
             <li>
               <a
-                href="#download"
+                href="/#download"
                 onClick={() => setOpen(false)}
                 className="inline-block rounded-full bg-amber px-5 py-2.5 font-semibold text-void"
               >

@@ -25,7 +25,7 @@ const hanken = Hanken_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — ${SITE.tagline}`,
+    default: SITE.seoTitle,
     template: `%s — ${SITE.name}`,
   },
   description: SITE.description,
@@ -35,13 +35,15 @@ export const metadata: Metadata = {
   publisher: SITE.name,
   category: "health",
   keywords: [
-    "sleep app",
-    "ambient sounds",
+    "sleep sounds app",
+    "AI sleep sounds",
+    "ambient sounds for sleep",
     "AI soundscapes",
-    "AI sound generation",
-    "white noise",
-    "sleep tracking",
-    "sleep sounds",
+    "white noise app",
+    "pink noise",
+    "brown noise",
+    "sleep tracking app",
+    "sounds to fall asleep",
     "bedtime sounds",
     "relaxation app",
     "LumaSleep",
@@ -62,7 +64,7 @@ export const metadata: Metadata = {
   },
   formatDetection: { telephone: false },
   openGraph: {
-    title: `${SITE.name} — ${SITE.tagline}`,
+    title: SITE.seoTitle,
     description: SITE.description,
     siteName: SITE.name,
     type: "website",
@@ -79,7 +81,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — ${SITE.tagline}`,
+    title: SITE.seoTitle,
     description: SITE.description,
     images: [abs("/og.png")],
   },

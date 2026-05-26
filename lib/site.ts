@@ -4,19 +4,23 @@
 export const SITE = {
   name: "LumaSleep",
   tagline: "Better sleep starts with the right sounds",
+  // SEO title for the homepage (keyword-targeted, ~58 chars).
+  seoTitle: "LumaSleep — AI Sleep Sounds, Soundscapes & Sleep Tracking",
   description:
-    "LumaSleep blends a hand-picked sound library, AI-generated soundscapes, a creative community, and Apple Health / Health Connect sleep tracking into one calm bedtime companion.",
+    "A sleep sounds app with 70+ ambient sounds, AI-generated soundscapes, white noise, sleep tracking and a creative community — your calm bedtime companion.",
   email: "support@lumasleep.ai",
   url: "https://www.lumasleep.ai",
   appStoreUrl: "https://apps.apple.com/app/luma-sleep/id6759291710",
 } as const;
 
+// Section anchors are prefixed with "/" so they work from any page (blog,
+// legal) — not just the homepage.
 export const NAV_LINKS = [
-  { label: "Sounds", href: "#sounds" },
-  { label: "AI Studio", href: "#studio" },
-  { label: "Community", href: "#community" },
-  { label: "Sleep", href: "#sleep" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Sounds", href: "/#sounds" },
+  { label: "AI Studio", href: "/#studio" },
+  { label: "Community", href: "/#community" },
+  { label: "Sleep", href: "/#sleep" },
+  { label: "Blog", href: "/blog/" },
 ] as const;
 
 // The six pillars shown on the home screen of the app.

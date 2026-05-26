@@ -2,6 +2,7 @@ import { Logo } from "./Brand";
 import { SITE } from "@/lib/site";
 
 const FOOTER_LINKS = [
+  { label: "Blog", href: "/blog/" },
   { label: "Privacy Policy", href: "/privacy/" },
   { label: "Terms of Service", href: "/terms/" },
   { label: "Support", href: "/support/" },

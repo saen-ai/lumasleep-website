@@ -375,3 +375,70 @@ a {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* ── Blog article prose ───────────────────────────────────────── */
+
+.prose {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #cfcee0;
+}
+
+.prose > p:first-child {
+  font-size: 1.18rem;
+  color: var(--color-linen);
+}
+
+.prose h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-linen);
+  margin: 2.4rem 0 0.8rem;
+  letter-spacing: -0.01em;
+}
+
+.prose h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-linen);
+  margin: 1.6rem 0 0.5rem;
+}
+
+.prose p {
+  margin: 0 0 1.1rem;
+}
+
+.prose ul {
+  margin: 0 0 1.3rem;
+  padding-left: 1.3rem;
+  list-style: none;
+}
+
+.prose li {
+  position: relative;
+  padding: 0.35rem 0 0.35rem 0.4rem;
+}
+
+.prose li::before {
+  content: "";
+  position: absolute;
+  left: -0.8rem;
+  top: 1rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--color-amber);
+}
+
+.prose strong {
+  color: var(--color-linen);
+  font-weight: 600;
+}
+
+.prose a {
+  color: var(--color-amber);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

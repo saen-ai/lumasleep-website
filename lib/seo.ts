@@ -57,3 +57,42 @@ export const faqLd = {
     },
   })),
 };
+
+// BlogPosting structured data for an individual article.
+export function articleLd(post: {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    image: abs("/og.png"),
+    mainEntityOfPage: { "@type": "WebPage", "@id": abs(`/blog/${post.slug}/`) },
+    author: { "@type": "Organization", name: SITE.name },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      logo: { "@type": "ImageObject", url: abs("/icon.svg") },
+    },
+  };
+}
+
+// BreadcrumbList for nav trails like Home › Blog › Post.
+export function breadcrumbLd(items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: abs(item.path),
+    })),
+  };
+}
