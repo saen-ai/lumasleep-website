@@ -1,5 +1,5 @@
 import { SITE } from "@/lib/site";
-import { AppleIcon, GooglePlayIcon } from "./icons";
+import { AppleIcon } from "./icons";
 
 // Crescent-moon mark with a soft amber glow — the website's logo lockup.
 export function Logo({ withWord = true }: { withWord?: boolean }) {
@@ -70,12 +70,6 @@ export function StoreButtons({ className = "" }: { className?: string }) {
         icon={<AppleIcon width={22} height={22} />}
         top="Download on the"
         bottom="App Store"
-      />
-      <StoreBadge
-        href={SITE.playStoreUrl}
-        icon={<GooglePlayIcon width={20} height={20} />}
-        top="Get it on"
-        bottom="Google Play"
       />
     </div>
   );

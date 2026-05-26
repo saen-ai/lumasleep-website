@@ -41,7 +41,7 @@ export function Hero() {
 
           <Reveal delay={360}>
             <p className="mt-5 text-[0.82rem] text-cedar/80">
-              Free to download · Available on iOS &amp; Android
+              Free to download · Available on the App Store
             </p>
           </Reveal>
         </div>

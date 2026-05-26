@@ -1,5 +1,7 @@
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { faqLd } from "@/lib/seo";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { Sounds } from "@/components/sections/Sounds";
@@ -12,6 +14,7 @@ import { Download } from "@/components/sections/Download";
 export default function Home() {
   return (
     <>
+      <JsonLd data={faqLd} />
       <Nav />
       <main>
         <Hero />

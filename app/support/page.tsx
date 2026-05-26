@@ -4,10 +4,12 @@ import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { ChevronDownIcon } from "@/components/icons";
 import { SITE } from "@/lib/site";
+import { abs } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Help & Support",
   description: "Answers to common LumaSleep questions, and how to reach our team.",
+  alternates: { canonical: abs("/support/") },
 };
 
 const GROUPS: { heading: string; items: { q: string; a: string }[] }[] = [

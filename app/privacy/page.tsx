@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { LegalShell } from "@/components/LegalShell";
+import { abs } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How LumaSleep collects, uses, and protects your data.",
+  alternates: { canonical: abs("/privacy/") },
 };
 
 export default function PrivacyPage() {

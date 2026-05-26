@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { LegalShell } from "@/components/LegalShell";
+import { abs } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Rules and guidelines for using the LumaSleep app.",
+  alternates: { canonical: abs("/terms/") },
 };
 
 export default function TermsPage() {
