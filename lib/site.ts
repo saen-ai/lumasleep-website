@@ -7,7 +7,7 @@ export const SITE = {
   description:
     "LumaSleep blends a hand-picked sound library, AI-generated soundscapes, a creative community, and Apple Health / Health Connect sleep tracking into one calm bedtime companion.",
   email: "support@lumasleep.ai",
-  url: "https://lumasleep.ai",
+  url: "https://www.lumasleep.ai",
   appStoreUrl: "https://apps.apple.com/app/luma-sleep/id6759291710",
 } as const;
 
