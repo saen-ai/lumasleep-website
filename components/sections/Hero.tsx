@@ -27,9 +27,10 @@ export function Hero() {
 
           <Reveal delay={180}>
             <p className="mx-auto mt-6 max-w-xl text-[1.12rem] leading-relaxed text-cedar lg:mx-0">
-              Drift off with a curated sound library, AI-generated soundscapes, a
-              creative community, and sleep tracking that learns your nights — all
-              in one calm app.
+              LumaSleep is the AI sleep sounds app for deeper rest — a curated
+              library of white noise, brown noise and rain, AI-generated
+              soundscapes, a creative community, and sleep tracking that learns
+              your nights, all in one calm app.
             </p>
           </Reveal>
 

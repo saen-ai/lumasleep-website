@@ -22,6 +22,7 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   const url = abs(`/blog/${post.slug}/`);
+  const image = abs(post.cover);
   return {
     title: post.title,
     description: post.description,
@@ -33,8 +34,14 @@ export async function generateMetadata({
       description: post.description,
       url,
       publishedTime: post.date,
+      images: [{ url: image, width: 1200, height: 630, alt: post.coverAlt }],
     },
-    twitter: { card: "summary_large_image", title: post.title, description: post.description },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [image],
+    },
   };
 }
 

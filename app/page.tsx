@@ -9,6 +9,7 @@ import { Sounds } from "@/components/sections/Sounds";
 import { Studio } from "@/components/sections/Studio";
 import { Community } from "@/components/sections/Community";
 import { Sleep } from "@/components/sections/Sleep";
+import { BlogTeaser } from "@/components/sections/BlogTeaser";
 import { Faq } from "@/components/sections/Faq";
 import { Download } from "@/components/sections/Download";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Studio />
         <Community />
         <Sleep />
+        <BlogTeaser />
         <Faq />
         <Download />
       </main>

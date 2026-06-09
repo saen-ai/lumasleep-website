@@ -29,7 +29,7 @@ export const softwareApplicationLd = {
   "@type": "SoftwareApplication",
   name: SITE.name,
   applicationCategory: "HealthApplication",
-  operatingSystem: "iOS",
+  operatingSystem: "iOS, Android",
   description: SITE.description,
   url: SITE.url,
   downloadUrl: SITE.appStoreUrl,

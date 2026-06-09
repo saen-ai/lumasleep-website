@@ -27,11 +27,11 @@ export function Features() {
           eyebrow="Everything for better sleep"
           title={
             <>
-              One calm home for your
-              <br className="hidden sm:block" /> whole bedtime ritual
+              One calm home for sleep sounds,
+              <br className="hidden sm:block" /> white noise &amp; AI soundscapes
             </>
           }
-          blurb="LumaSleep brings science-backed wind-down tools together with a design made for the dark."
+          blurb="LumaSleep is the AI sleep sounds app that brings science-backed wind-down tools — white noise, brown noise, rain and custom soundscapes — together with a design made for the dark."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
