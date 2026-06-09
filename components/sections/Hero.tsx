@@ -1,4 +1,4 @@
-import { Reveal } from "../Reveal";
+import { FadeUp } from "../FadeUp";
 import { StoreButtons } from "../Brand";
 import { PhoneMockup } from "../PhoneMockup";
 import { SITE } from "@/lib/site";
@@ -9,46 +9,45 @@ export function Hero() {
       <div className="shell grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
         {/* Copy */}
         <div className="text-center lg:text-left">
-          <Reveal>
+          <FadeUp>
             <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[0.8rem] text-linen/90">
               <span className="h-1.5 w-1.5 rounded-full bg-sage" />
               Your personal sleep companion
             </span>
-          </Reveal>
+          </FadeUp>
 
-          <Reveal delay={90}>
-            <h1 className="mt-6 font-display text-[clamp(2.7rem,6.6vw,4.6rem)] font-medium leading-[1.04] tracking-[-0.02em]">
-              Better sleep starts
-              <br />
-              with the right{" "}
-              <span className="aurora-text italic">sounds</span>
-            </h1>
-          </Reveal>
+          {/* LCP element — rendered visible at first paint (no JS gate). */}
+          <h1 className="fade-in-up mt-6 font-display text-[clamp(2.7rem,6.6vw,4.6rem)] font-medium leading-[1.04] tracking-[-0.02em]">
+            Better sleep starts
+            <br />
+            with the right{" "}
+            <span className="aurora-text italic">sounds</span>
+          </h1>
 
-          <Reveal delay={180}>
+          <FadeUp delay={120}>
             <p className="mx-auto mt-6 max-w-xl text-[1.12rem] leading-relaxed text-cedar lg:mx-0">
               LumaSleep is the AI sleep sounds app for deeper rest — a curated
               library of white noise, brown noise and rain, AI-generated
               soundscapes, a creative community, and sleep tracking that learns
               your nights, all in one calm app.
             </p>
-          </Reveal>
+          </FadeUp>
 
-          <Reveal delay={270}>
+          <FadeUp delay={210}>
             <div className="mt-9 flex justify-center lg:justify-start">
               <StoreButtons />
             </div>
-          </Reveal>
+          </FadeUp>
 
-          <Reveal delay={360}>
+          <FadeUp delay={300}>
             <p className="mt-5 text-[0.82rem] text-cedar/80">
               Free to download · Available on the App Store
             </p>
-          </Reveal>
+          </FadeUp>
         </div>
 
         {/* Visual */}
-        <Reveal delay={240} className="flex justify-center lg:justify-end">
+        <FadeUp delay={180} className="flex justify-center lg:justify-end">
           <div className="relative">
             {/* Aurora glow behind the phone */}
             <div
@@ -62,7 +61,7 @@ export function Hero() {
             />
             <PhoneMockup />
           </div>
-        </Reveal>
+        </FadeUp>
       </div>
 
       <span className="sr-only">{SITE.description}</span>

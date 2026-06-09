@@ -11,9 +11,8 @@ export function Download() {
             className="relative overflow-hidden rounded-[28px] px-7 py-16 text-center sm:px-12 sm:py-20"
             style={{
               background:
-                "radial-gradient(120% 140% at 50% -20%, rgba(108,99,255,0.35), transparent 60%), linear-gradient(160deg, rgba(30,37,69,0.7), rgba(11,15,30,0.7))",
+                "radial-gradient(120% 140% at 50% -20%, rgba(108,99,255,0.35), transparent 60%), linear-gradient(160deg, rgba(30,37,69,0.92), rgba(11,15,30,0.92))",
               border: "1px solid rgba(255,255,255,0.1)",
-              backdropFilter: "blur(14px)",
             }}
           >
             <span

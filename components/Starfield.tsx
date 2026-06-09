@@ -14,7 +14,14 @@ export function Starfield() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    // Animate the twinkle only where it's cheap: desktop, fine pointer, motion
+    // allowed. On phones/tablets (and reduced-motion) we paint one static field
+    // and never start a render loop — no per-frame main-thread cost or battery
+    // drain, which is what hurts mobile INP.
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const coarse = window.matchMedia("(pointer: coarse)").matches;
+    const desktop = window.matchMedia("(min-width: 1024px)").matches;
+    const animate = !reduced && !coarse && desktop;
 
     let width = 0;
     let height = 0;
@@ -50,9 +57,16 @@ export function Starfield() {
 
     let raf = 0;
     let t = 0;
+    // Throttle the loop to ~30fps. The twinkle is slow, so 30fps is
+    // indistinguishable from 60 but halves the main-thread/GPU work.
+    const FRAME_MS = 1000 / 30;
+    let last = 0;
 
-    function frame() {
-      t += 0.016;
+    function frame(now: number) {
+      raf = requestAnimationFrame(frame);
+      if (now - last < FRAME_MS) return;
+      last = now;
+      t += FRAME_MS / 1000;
       ctx!.clearRect(0, 0, width, height);
 
       for (const s of stars) {
@@ -65,7 +79,7 @@ export function Starfield() {
       }
 
       // Shooting star, occasionally.
-      nextShot -= 0.016;
+      nextShot -= FRAME_MS / 1000;
       if (!shooting && nextShot <= 0) {
         shooting = {
           x: Math.random() * width * 0.7,
@@ -97,29 +111,56 @@ export function Starfield() {
       }
 
       ctx!.globalAlpha = 1;
+    }
+
+    function paintStatic() {
+      ctx!.clearRect(0, 0, width, height);
+      for (const s of stars) {
+        ctx!.globalAlpha = s.base + 0.2;
+        ctx!.fillStyle = "#dfe4ff";
+        ctx!.beginPath();
+        ctx!.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx!.fill();
+      }
+      ctx!.globalAlpha = 1;
+    }
+
+    function start() {
+      if (raf) return;
+      last = 0;
       raf = requestAnimationFrame(frame);
+    }
+    function stop() {
+      cancelAnimationFrame(raf);
+      raf = 0;
+    }
+
+    // Repaint static when not animating; otherwise reseed feeds the loop.
+    function onResize() {
+      resize();
+      if (!animate) paintStatic();
+    }
+
+    // Pause the loop whenever the tab is hidden — no point animating offscreen.
+    function onVisibility() {
+      if (document.hidden) stop();
+      else start();
     }
 
     resize();
-    window.addEventListener("resize", resize);
+    window.addEventListener("resize", onResize);
 
-    if (reduced) {
-      // Paint one static field, no animation.
-      for (const s of stars) {
-        ctx.globalAlpha = s.base + 0.2;
-        ctx.fillStyle = "#dfe4ff";
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fill();
-      }
-      ctx.globalAlpha = 1;
+    if (animate) {
+      document.addEventListener("visibilitychange", onVisibility);
+      start();
     } else {
-      raf = requestAnimationFrame(frame);
+      paintStatic();
     }
 
     return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("resize", resize);
+      stop();
+      window.removeEventListener("resize", onResize);
+      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, []);
 

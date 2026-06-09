@@ -1,9 +1,10 @@
 import { Reveal } from "../Reveal";
 import { SectionHeading } from "../ui";
+import { PromoVideo } from "../PromoVideo";
 
-/* Autoplaying product film. Muted + playsInline so mobile browsers
-   allow autoplay; poster keeps the frame painted before the video
-   streams in. */
+/* Product film. Plays only while on screen (see PromoVideo) so it never
+   decodes off-screen; muted + playsInline so mobile browsers allow autoplay,
+   poster keeps the frame painted before the video streams in. */
 export function Promo() {
   return (
     <section id="promo" className="py-20 sm:py-28">
@@ -31,19 +32,7 @@ export function Promo() {
               }}
             />
             <div className="glass overflow-hidden rounded-3xl p-2">
-              <video
-                className="w-full rounded-2xl"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                poster="/promo-poster.jpg"
-                aria-label="LumaSleep app preview video"
-              >
-                <source src="/promo.webm" type="video/webm" />
-                <source src="/promo.mp4" type="video/mp4" />
-              </video>
+              <PromoVideo />
             </div>
           </div>
         </Reveal>
