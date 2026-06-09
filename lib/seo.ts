@@ -64,6 +64,7 @@ export function articleLd(post: {
   title: string;
   description: string;
   date: string;
+  cover?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -72,7 +73,7 @@ export function articleLd(post: {
     description: post.description,
     datePublished: post.date,
     dateModified: post.date,
-    image: abs("/og.png"),
+    image: abs(post.cover ?? "/og.png"),
     mainEntityOfPage: { "@type": "WebPage", "@id": abs(`/blog/${post.slug}/`) },
     author: { "@type": "Organization", name: SITE.name },
     publisher: {
@@ -80,6 +81,19 @@ export function articleLd(post: {
       name: SITE.name,
       logo: { "@type": "ImageObject", url: abs("/icon.svg") },
     },
+  };
+}
+
+// FAQPage structured data for an article's FAQ section.
+export function faqPageLd(faqs: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
   };
 }
 

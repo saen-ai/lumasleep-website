@@ -442,3 +442,60 @@ a {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8rem 0;
+  font-size: 0.95rem;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.prose thead {
+  background: rgba(232, 168, 56, 0.08);
+}
+
+.prose th {
+  text-align: left;
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--color-linen);
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.prose td {
+  color: var(--color-cedar);
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  line-height: 1.6;
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prose td strong {
+  color: var(--color-linen);
+}
+
+.prose img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 1.8rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.prose figure {
+  margin: 1.8rem 0;
+}
+
+.prose figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--color-cedar);
+  text-align: center;
+}

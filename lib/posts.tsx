@@ -7,6 +7,9 @@ export type Post = {
   date: string; // ISO date
   readingMinutes: number;
   keywords: string[];
+  cover: string; // /blog/<slug>.webp — 1200×630
+  coverAlt: string;
+  faqs?: { q: string; a: string }[]; // optional — rendered + emitted as FAQPage schema
   body: ReactNode;
 };
 
@@ -16,6 +19,8 @@ export type Post = {
 const POSTS: Post[] = [
   {
     slug: "best-sounds-to-fall-asleep-fast",
+    cover: "/blog/best-sounds-to-fall-asleep-fast.webp",
+    coverAlt: "Glowing soundwaves beneath a crescent moon on a starry night — best sounds to fall asleep fast",
     title: "Best Sounds to Fall Asleep Fast: A Complete Guide",
     description:
       "From rain and ocean waves to brown noise and fireplaces — here are the best sounds to fall asleep fast, why they work, and how to pick the right one for you.",
@@ -97,6 +102,8 @@ const POSTS: Post[] = [
   },
   {
     slug: "white-noise-vs-pink-noise-vs-brown-noise",
+    cover: "/blog/white-noise-vs-pink-noise-vs-brown-noise.webp",
+    coverAlt: "Coloured soundwaves over a night sky — white vs pink vs brown noise for sleep",
     title: "White vs Pink vs Brown Noise: Which Is Best for Sleep?",
     description:
       "White, pink, and brown noise sound different and help in different ways. Here's how each one works and which colour of noise is best for falling and staying asleep.",
@@ -167,6 +174,8 @@ const POSTS: Post[] = [
   },
   {
     slug: "how-ai-sleep-sounds-work",
+    cover: "/blog/how-ai-sleep-sounds-work.webp",
+    coverAlt: "Violet soundwaves over a starfield — how AI-generated sleep sounds work",
     title: "How AI-Generated Sleep Sounds Work (and Why They're Different)",
     description:
       "AI sleep sounds let you describe any soundscape and hear it within seconds. Here's how AI sound generation works and why it beats a fixed library of loops.",
@@ -233,6 +242,8 @@ const POSTS: Post[] = [
   },
   {
     slug: "understanding-your-sleep-score",
+    cover: "/blog/understanding-your-sleep-score.webp",
+    coverAlt: "Teal soundwaves over a night sky — understanding your sleep score, stages and REM",
     title: "Understanding Your Sleep Score: Stages, REM & Deep Sleep",
     description:
       "What is a sleep score, how is it calculated, and what do light, deep, and REM stages mean? A clear guide to reading your nightly sleep data.",
@@ -308,6 +319,8 @@ const POSTS: Post[] = [
   },
   {
     slug: "how-to-build-a-bedtime-routine",
+    cover: "/blog/how-to-build-a-bedtime-routine.webp",
+    coverAlt: "Amber soundwaves beneath a moon — how to build a bedtime routine that sticks",
     title: "How to Build a Bedtime Routine That Actually Sticks",
     description:
       "A simple, science-backed bedtime routine helps you fall asleep faster and wake up rested. Here's how to build a wind-down routine you'll actually keep.",
@@ -373,6 +386,8 @@ const POSTS: Post[] = [
   },
   {
     slug: "why-cant-i-sleep",
+    cover: "/blog/why-cant-i-sleep.webp",
+    coverAlt: "Restless blue soundwaves over a starry sky — why can't I sleep and what helps",
     title: "Why Can't I Sleep? Common Causes and What Actually Helps",
     description:
       "Lying awake at night? Here are the most common reasons you can't sleep — from stress and screens to caffeine and routine — and practical fixes for each.",
@@ -445,6 +460,8 @@ const POSTS: Post[] = [
   },
   {
     slug: "rain-sounds-for-sleep",
+    cover: "/blog/rain-sounds-for-sleep.webp",
+    coverAlt: "Blue soundwaves over a night sky — rain sounds for sleep and why they work",
     title: "Rain Sounds for Sleep: Why They Work So Well",
     description:
       "Rain sounds are the most popular sleep sound for a reason. Here's the science behind why rain helps you sleep, and how to use it for the best results.",
@@ -505,6 +522,8 @@ const POSTS: Post[] = [
   },
   {
     slug: "best-sounds-for-focus-and-studying",
+    cover: "/blog/best-sounds-for-focus-and-studying.webp",
+    coverAlt: "Cyan soundwaves over a starfield — the best sounds for focus, studying and deep work",
     title: "The Best Sounds for Focus, Studying & Deep Work",
     description:
       "The right background sound can sharpen concentration and block distractions. Here are the best sounds for focus, studying, and deep work — and why they help.",
@@ -563,6 +582,483 @@ const POSTS: Post[] = [
           LumaSleep includes focus music, lo-fi, and coloured-noise tracks alongside its
           sleep library, so the same app that helps you wind down at night can help you lock
           in during the day.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "white-noise-vs-green-noise",
+    cover: "/blog/white-noise-vs-green-noise.webp",
+    coverAlt: "Green and white soundwaves over a starry night sky — white noise vs green noise for sleep",
+    title: "White Noise vs Green Noise: What's the Difference for Sleep?",
+    description:
+      "Green noise sounds like nature; white noise sounds like static. Here's the real difference between white and green noise — and which one helps you sleep better.",
+    date: "2026-06-09",
+    readingMinutes: 5,
+    keywords: ["white noise vs green noise", "what is green noise", "green noise for sleep", "green noise benefits"],
+    faqs: [
+      {
+        q: "What is the difference between white noise and green noise?",
+        a: "White noise spreads sound energy evenly across all frequencies, giving it a bright, hissy quality like static. Green noise concentrates energy in the middle of the spectrum — around the ambient sounds of nature — so it sounds softer and more like a steady stream or gentle rainfall.",
+      },
+      {
+        q: "Is green noise good for sleep?",
+        a: "Yes. Many people find green noise especially relaxing because its mid-range, nature-like character is gentler than white noise while still masking background disturbances. It is a good choice if white noise feels too sharp.",
+      },
+      {
+        q: "Is green noise better than white noise?",
+        a: "Neither is universally better — it depends on your ears and your environment. White noise masks sudden sounds slightly more effectively across the whole spectrum, while green noise feels more natural and soothing. Try both and keep whichever quiets your mind faster.",
+      },
+      {
+        q: "What does green noise sound like?",
+        a: "Green noise sounds like the natural world at rest — a steady stream, light rainfall, ocean swell, or wind through trees. It is the background hum of nature rather than the flat hiss of static.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          If you&apos;ve been exploring sleep sounds, you&apos;ve probably met the
+          &ldquo;colours&rdquo; of noise — white, pink, brown, and the newer favourite,
+          green. In short: <strong>white noise is bright and hiss-like</strong>, while
+          <strong> green noise is softer and sounds like nature</strong> — a steady stream
+          or gentle rain. Here&apos;s the difference, and how to pick the right one for sleep.
+        </p>
+
+        <h2>What is green noise?</h2>
+        <p>
+          Green noise emphasises the <strong>middle of the frequency spectrum</strong> —
+          right around the ambient sounds of the natural world. That mid-range focus is why
+          it sounds like a babbling creek, soft rainfall, or distant ocean swell rather than
+          a flat wall of static. It&apos;s often described as the &ldquo;background hum of
+          nature,&rdquo; which makes it feel calming and organic.
+        </p>
+
+        <h2>What is white noise?</h2>
+        <p>
+          White noise contains <strong>every frequency at equal intensity</strong>, which
+          gives it that sharp, even hiss — think an untuned radio or a fan on high. Because
+          it covers the whole spectrum, it&apos;s excellent at masking sudden sounds like a
+          slamming door or passing car. Some people find it a little harsh over a full night.
+          (For a deeper comparison, see our guide to{" "}
+          <a href="/blog/white-noise-vs-pink-noise-vs-brown-noise/">white vs pink vs brown noise</a>.)
+        </p>
+
+        <h2>White noise vs green noise: the key differences</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>White noise</th>
+              <th>Green noise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sounds like</strong></td>
+              <td>Static, hiss, a fan</td>
+              <td>A stream, light rain, nature</td>
+            </tr>
+            <tr>
+              <td><strong>Frequency focus</strong></td>
+              <td>Even across all frequencies</td>
+              <td>Concentrated in the mid-range</td>
+            </tr>
+            <tr>
+              <td><strong>Feel</strong></td>
+              <td>Bright, sharp</td>
+              <td>Soft, natural, calming</td>
+            </tr>
+            <tr>
+              <td><strong>Best for</strong></td>
+              <td>Blocking sudden noise</td>
+              <td>Gentle, all-night relaxation</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Which is better for sleep?</h2>
+        <p>
+          There&apos;s no universal winner — sleep is personal. If you live somewhere noisy
+          and need to block sudden sounds, <strong>white noise</strong> covers the widest
+          range. If white noise feels too harsh, or you simply relax to the sound of nature,
+          <strong> green noise</strong> is gentler while still masking disturbances. A good
+          rule: the sound you stop noticing fastest is the one helping you most.
+        </p>
+
+        <h2>How to try both tonight</h2>
+        <p>
+          The easiest way to choose is to test them back to back in bed and notice which one
+          quiets your mind first. Keep the volume moderate — loud enough to cover
+          interruptions, not so loud it becomes the focus — and use a fade-out timer so it
+          doesn&apos;t play at full volume until morning.
+        </p>
+        <p>
+          LumaSleep includes white, pink, brown, and green noise alongside rain, ocean, and
+          AI-generated soundscapes, so you can compare them all in one app — and even layer a
+          noise track under rain or waves to build your perfect blend.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "sleeping-with-a-sound-machine",
+    cover: "/blog/sleeping-with-a-sound-machine.webp",
+    coverAlt: "Amber soundwaves beneath a crescent moon — is it bad to sleep with a sound machine every night",
+    title: "Is It Bad to Sleep With a Sound Machine On Every Night?",
+    description:
+      "Is sleeping with a sound machine bad for you? Here's what to know about nightly white noise, safe volume levels, dependency, and how long to use it.",
+    date: "2026-06-07",
+    readingMinutes: 5,
+    keywords: ["sleeping with a sound machine", "is it bad to sleep with a sound machine", "sound machine every night", "white noise safe volume"],
+    faqs: [
+      {
+        q: "Is it bad to sleep with a sound machine on every night?",
+        a: "For most adults, sleeping with a sound machine every night is safe as long as the volume is moderate. The main consideration is volume: keep it around the level of a soft shower (roughly 50 decibels or lower) and place it a few feet from your head to protect your hearing over the long term.",
+      },
+      {
+        q: "Can you become dependent on a sound machine to sleep?",
+        a: "Your brain can come to associate the sound with sleep, which is actually useful — it becomes a cue that it is time to rest. If you ever need to sleep without it you may take a few nights to adjust, but it is not a harmful dependency.",
+      },
+      {
+        q: "What volume should a sound machine be?",
+        a: "Keep it just loud enough to mask background noise — typically under 50 decibels, similar to a soft shower or light rainfall. Louder is not better and can strain your hearing or keep you alert.",
+      },
+      {
+        q: "How far should a sound machine be from your bed?",
+        a: "Place it at least a few feet (about a metre) away rather than right next to your head, especially for children and babies. The greater distance lowers the sound level reaching your ears while still masking disturbances.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          Sound machines are one of the most popular sleep aids around — but if you use one
+          every single night, it&apos;s natural to wonder whether that&apos;s actually fine.
+          The short answer: <strong>for most adults, sleeping with a sound machine every
+          night is perfectly safe</strong>, as long as you keep the volume moderate.
+          Here&apos;s what matters.
+        </p>
+
+        <h2>Is sleeping with a sound machine bad for you?</h2>
+        <p>
+          There&apos;s no evidence that nightly use of a sound machine harms a healthy adult.
+          A steady background sound simply masks the sudden noises — a creak, a car, a snoring
+          partner — that would otherwise pull you out of light sleep. Used sensibly, it helps
+          you fall asleep faster and stay asleep, which is the whole point.
+        </p>
+
+        <h2>The one thing that matters: volume</h2>
+        <p>
+          The only real caution is <strong>loudness</strong>. Running any sound too loud for
+          hours, night after night, isn&apos;t great for your hearing. Keep your machine
+          around or below <strong>50 decibels</strong> — roughly the level of a soft shower or
+          gentle rainfall — and position it <strong>a few feet from your head</strong> rather
+          than right beside your ear. That&apos;s enough to mask disruptions without strain.
+        </p>
+
+        <h2>Can you get &ldquo;addicted&rdquo; to a sound machine?</h2>
+        <p>
+          Not in any harmful sense. What happens is that your brain forms an association
+          between the sound and sleep, so the sound becomes a powerful cue that it&apos;s time
+          to wind down — the same way a bedtime routine works. If you travel or need to sleep
+          without it, you might take a night or two to adjust, but that&apos;s a mild habit,
+          not a dependency to worry about.
+        </p>
+
+        <h2>How long should you use it?</h2>
+        <p>
+          All night is fine. Some people prefer a <strong>fade-out timer</strong> so the sound
+          gently switches off once they&apos;re asleep, which can save a little battery or
+          power and suits lighter sleepers. Others like continuous sound to mask noise right
+          through till morning. Both approaches are reasonable — choose whichever leaves you
+          more rested.
+        </p>
+
+        <h2>Sound machine vs a sleep-sounds app</h2>
+        <p>
+          A dedicated machine is simple and always on your nightstand. A{" "}
+          <a href="/blog/white-noise-on-iphone-all-night/">sleep-sounds app on your phone</a>{" "}
+          gives you far more variety — dozens of sounds, the ability to mix several together,
+          and a built-in fade-out timer — without buying extra hardware. If you like having
+          options, an app is the more flexible choice.
+        </p>
+        <p>
+          LumaSleep offers 70+ sounds with a fade-out timer, so you can set the exact texture
+          that sends you off and let it switch itself off — every night, safely.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "white-noise-on-iphone-all-night",
+    cover: "/blog/white-noise-on-iphone-all-night.webp",
+    coverAlt: "Blue soundwaves over a starry sky — how to play white noise on iPhone all night",
+    title: "How to Play White Noise on iPhone All Night",
+    description:
+      "Want white noise on your iPhone all night? Here's how to keep sleep sounds playing with the screen off — using Background Sounds and a dedicated sleep app.",
+    date: "2026-06-05",
+    readingMinutes: 5,
+    keywords: ["white noise on iphone", "play white noise iphone all night", "iphone background sounds", "iphone sleep sounds"],
+    faqs: [
+      {
+        q: "How do I play white noise on my iPhone all night?",
+        a: "You have two options. iPhone's built-in Background Sounds (Settings → Accessibility → Audio & Visual → Background Sounds) can play white, pink, or brown noise plus rain or ocean continuously. For more sounds, mixing, and a fade-out timer, use a dedicated sleep-sounds app with all-night background playback.",
+      },
+      {
+        q: "Does iPhone have a built-in white noise feature?",
+        a: "Yes. iPhone includes Background Sounds under Accessibility, offering Balanced, Bright, and Dark Noise (white, pink, brown) plus Ocean, Rain, and Stream. You can set them to keep playing when other audio is active and continue with the screen locked.",
+      },
+      {
+        q: "Why does my white noise stop playing when the screen locks?",
+        a: "Most music and video apps pause to save battery. To keep audio going with the screen off, use iPhone's Background Sounds or a sleep-sounds app built for continuous background playback — those keep playing all night while locked.",
+      },
+      {
+        q: "Will playing white noise all night drain my iPhone battery?",
+        a: "Audio playback uses relatively little power, but to be safe keep your iPhone plugged in overnight. Locking the screen and lowering brightness also helps minimise battery use while the sound continues.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          Your iPhone can play white noise all night long — and there are two good ways to do
+          it. The quickest uses a hidden feature built into iOS; the other uses a dedicated
+          sleep-sounds app for more variety and control. Here&apos;s how to set up both so the
+          sound keeps playing with the screen off.
+        </p>
+
+        <h2>Option 1: iPhone&apos;s built-in Background Sounds</h2>
+        <p>
+          iOS has a white-noise feature tucked away in Accessibility. To turn it on:
+        </p>
+        <ul>
+          <li>Open <strong>Settings → Accessibility</strong></li>
+          <li>Tap <strong>Audio &amp; Visual → Background Sounds</strong></li>
+          <li>Toggle <strong>Background Sounds</strong> on</li>
+          <li>Tap <strong>Sound</strong> and pick one — Balanced, Bright, or Dark Noise (white, pink, brown), or Ocean, Rain, and Stream</li>
+        </ul>
+        <p>
+          Set <strong>&ldquo;Use When Media Is Playing&rdquo;</strong> and the volume to taste.
+          It&apos;ll keep playing with the screen locked — all night, for free. You can also
+          add it to your Control Centre for one-tap access.
+        </p>
+
+        <h2>Option 2: a dedicated sleep-sounds app</h2>
+        <p>
+          Background Sounds is handy but limited to a few options. A sleep-sounds app gives you
+          dozens of sounds — rain on a roof, a fireplace, a thunderstorm — plus the ability to
+          <strong> mix several together</strong> and set a <strong>fade-out timer</strong>.
+          Good sleep apps are built specifically for continuous overnight playback, so the
+          audio keeps going when your phone is locked.
+        </p>
+
+        <h2>Why your sound stops when the screen locks</h2>
+        <p>
+          If you&apos;ve tried playing white noise from a video or some music apps, you&apos;ve
+          probably noticed it pauses when the screen turns off. That&apos;s the app saving
+          battery. The fix is to use a source designed for background audio — either iOS
+          Background Sounds or a proper sleep app — both of which are allowed to keep playing
+          all night.
+        </p>
+
+        <h2>Keep it playing all night</h2>
+        <p>
+          Two quick tips: <strong>plug your iPhone in</strong> overnight so battery is never a
+          concern, and decide whether you want the sound to run continuously or{" "}
+          <a href="/blog/sleeping-with-a-sound-machine/">fade out on a timer</a> once
+          you&apos;re asleep. Lighter sleepers often prefer continuous masking; others like a
+          gentle fade.
+        </p>
+        <p>
+          LumaSleep is built for exactly this: 70+ sounds, layering, and a fade-out timer, all
+          playing reliably in the background while your iPhone is locked — so you drift off and
+          it keeps going as long as you need.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "best-white-noise-for-babies",
+    cover: "/blog/best-white-noise-for-babies.webp",
+    coverAlt: "Soft pink soundwaves beneath a moon — best white noise for babies and safe volume",
+    title: "Best White Noise for Babies (and How Long to Use It)",
+    description:
+      "What's the best white noise for babies, how loud is safe, and how long should you use it? A practical, safety-first guide to helping your baby sleep.",
+    date: "2026-06-03",
+    readingMinutes: 6,
+    keywords: ["white noise for babies", "best white noise for baby", "baby sleep sounds", "is white noise safe for babies"],
+    faqs: [
+      {
+        q: "Is white noise safe for babies?",
+        a: "Yes, when used at a safe volume and distance. Common pediatric guidance is to keep the sound machine below about 50 decibels and place it at least 2 metres (around 7 feet) from the crib rather than right beside it. Used this way, white noise can help babies settle by mimicking the constant whoosh they heard in the womb.",
+      },
+      {
+        q: "What is the best white noise for a baby?",
+        a: "Low, steady sounds tend to work best — a gentle shushing or rainfall rather than sharp, high-pitched noise. Many parents find that deeper brown noise, a fan-like hum, or recorded womb sounds settle babies fastest because they resemble what the baby heard before birth.",
+      },
+      {
+        q: "How long should you use white noise for a baby?",
+        a: "It is generally fine to use it for the whole nap or night while the baby is settling and sleeping. Some experts suggest turning it off once the baby is in deep sleep or using a timer, but continuous low-level white noise through the night is widely considered acceptable when the volume is safe.",
+      },
+      {
+        q: "Is it OK to use a hairdryer or vacuum sound for baby sleep?",
+        a: "A recording of these household sounds can work because they resemble womb noise, but never place an actual running appliance near a baby. Use a recorded version at a safe volume and distance instead.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          White noise can be a parent&apos;s best friend at bedtime — it mimics the constant
+          whoosh a baby heard in the womb and helps them settle. The keys are choosing the
+          <strong> right kind of sound</strong> and using it at a <strong>safe volume and
+          distance</strong>. Here&apos;s a practical, safety-first guide.
+        </p>
+
+        <h2>Why white noise helps babies sleep</h2>
+        <p>
+          The womb is a surprisingly loud place — a steady rush of blood flow and muffled
+          sound. To a newborn, total silence can feel unfamiliar, while a soft, continuous
+          &ldquo;shhh&rdquo; feels reassuring and familiar. White noise also masks household
+          sounds — a doorbell, a sibling, the TV — that might otherwise startle a sleeping baby.
+        </p>
+
+        <h2>The best type of white noise for babies</h2>
+        <p>
+          Go for <strong>low, steady, and smooth</strong> rather than sharp or high-pitched:
+        </p>
+        <ul>
+          <li><strong>Shushing or fan-like hum</strong> — closest to womb sounds.</li>
+          <li><strong>Brown noise</strong> — deep and low, often more soothing than bright white noise.</li>
+          <li><strong>Steady rainfall</strong> — gentle and continuous.</li>
+        </ul>
+        <p>
+          Avoid sounds with sudden peaks or tinny high frequencies, which can be more alerting
+          than calming.
+        </p>
+
+        <h2>Is white noise safe for babies?</h2>
+        <p>
+          Yes — with two simple rules around <strong>volume and distance</strong>:
+        </p>
+        <ul>
+          <li><strong>Keep it below ~50 decibels</strong> — about the level of a soft shower. If you have to raise your voice to talk over it, it&apos;s too loud.</li>
+          <li><strong>Place it at least ~2 metres (7 feet) from the crib</strong> — never right next to your baby&apos;s head.</li>
+        </ul>
+        <p>
+          A baby&apos;s hearing is still developing, so erring on the quieter side is always the
+          safer choice.
+        </p>
+
+        <h2>How long should you use white noise for a baby?</h2>
+        <p>
+          Using it for the whole nap or night, while your baby is settling and sleeping, is
+          widely considered fine when the volume is safe. Some parents use a timer so it fades
+          once the baby is in deep sleep; others keep it on low all night to mask household
+          noise. Either approach works — do what helps your baby sleep best.
+        </p>
+
+        <h2>What about hairdryer or vacuum sounds?</h2>
+        <p>
+          You&apos;ll see &ldquo;hairdryer&rdquo; and &ldquo;vacuum&rdquo; tracks recommended
+          for fussy babies, and they can work because they resemble womb noise. The important
+          rule: use a <strong>recording</strong> at a safe distance — never run an actual
+          appliance near your baby.
+        </p>
+
+        <p style={{ fontStyle: "italic" }}>
+          This article is general information, not medical advice. If you have concerns about
+          your baby&apos;s sleep or hearing, talk to your pediatrician.
+        </p>
+        <p>
+          LumaSleep includes gentle, baby-friendly sounds — soft shushing, brown noise, and
+          steady rain — with a fade-out timer, so you can settle your little one and let the
+          sound ease off on its own.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "alexa-sleep-sounds-all-night",
+    cover: "/blog/alexa-sleep-sounds-all-night.webp",
+    coverAlt: "Teal soundwaves over a night sky — can you leave Alexa playing sleep sounds all night",
+    title: "Can You Leave Alexa Playing Sleep Sounds All Night?",
+    description:
+      "Yes — you can leave Alexa playing white noise or sleep sounds all night. Here's how to loop sounds, add a timer, and whether it's safe to run overnight.",
+    date: "2026-06-01",
+    readingMinutes: 4,
+    keywords: ["alexa sleep sounds", "alexa white noise all night", "leave alexa on all night", "alexa sleep sounds loop"],
+    faqs: [
+      {
+        q: "Can you leave Alexa playing sleep sounds all night?",
+        a: "Yes. Alexa can play white noise and sleep sounds continuously through the night. The built-in sounds and most sleep-sound skills loop automatically, so you can say a command like 'Alexa, play white noise' and it will keep playing until you stop it or a timer ends.",
+      },
+      {
+        q: "Is it safe to leave Alexa on all night?",
+        a: "Leaving an Alexa device running overnight is generally safe — it uses little power and is designed for continuous use. Keep the volume moderate to protect your hearing, and plug it in rather than running on battery if it is a portable model.",
+      },
+      {
+        q: "How do I make Alexa loop white noise?",
+        a: "Say 'Alexa, play white noise' or enable a sleep-sounds skill such as Sleep Sounds: White Noise. These loop by default. To stop it automatically, add a sleep timer: 'Alexa, set a sleep timer for 8 hours.'",
+      },
+      {
+        q: "What sleep sounds can Alexa play?",
+        a: "Alexa offers white noise, rain, ocean, fan, fireplace, thunderstorm and many more through built-in sounds and free skills. You can also ask for green noise or brown noise if you prefer a softer or deeper tone.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          Yes — you can absolutely leave Alexa playing sleep sounds all night. The built-in
+          sounds and most sleep-sound skills <strong>loop automatically</strong>, so a single
+          command keeps white noise or rain going until morning. Here&apos;s how to set it up,
+          loop it, and whether it&apos;s safe to run overnight.
+        </p>
+
+        <h2>How to play sleep sounds on Alexa all night</h2>
+        <p>
+          The simplest way is a voice command. Try any of these:
+        </p>
+        <ul>
+          <li>&ldquo;Alexa, play white noise&rdquo;</li>
+          <li>&ldquo;Alexa, play rain sounds&rdquo;</li>
+          <li>&ldquo;Alexa, play ocean sounds&rdquo;</li>
+          <li>&ldquo;Alexa, open Sleep Sounds&rdquo; (a free skill with dozens of options)</li>
+        </ul>
+        <p>
+          These keep playing on a loop — they won&apos;t stop after one track.
+        </p>
+
+        <h2>How to make Alexa loop sounds (and add a timer)</h2>
+        <p>
+          Built-in sounds and sleep skills already loop indefinitely, so you don&apos;t need to
+          do anything special to keep them going all night. If you&apos;d rather they stop on
+          their own, add a <strong>sleep timer</strong>:
+        </p>
+        <ul>
+          <li>&ldquo;Alexa, set a sleep timer for 8 hours&rdquo; — the audio fades out when the timer ends.</li>
+        </ul>
+
+        <h2>Is it safe to leave Alexa on all night?</h2>
+        <p>
+          Generally, yes. Echo devices are designed to run continuously and use very little
+          power. Two sensible tips: keep the <strong>volume moderate</strong> to protect your
+          hearing over time, and if it&apos;s a portable Echo, keep it <strong>plugged in</strong>
+          rather than on battery.
+        </p>
+
+        <h2>White noise, green noise, or brown noise on Alexa?</h2>
+        <p>
+          Alexa can do more than plain white noise — just ask for &ldquo;green noise&rdquo; or
+          &ldquo;brown noise&rdquo; if you prefer something softer or deeper. Not sure which
+          suits you? Our guide to{" "}
+          <a href="/blog/white-noise-vs-green-noise/">white noise vs green noise</a> breaks
+          down how each one sounds and what it&apos;s best for.
+        </p>
+
+        <h2>Want more control than Alexa?</h2>
+        <p>
+          Alexa is great for hands-free playback, but a dedicated app lets you mix sounds,
+          fine-tune the blend, and take your sleep sounds with you when you travel. LumaSleep
+          offers 70+ sounds, AI-generated soundscapes, and a fade-out timer — your sleep setup
+          in your pocket, wherever you are.
         </p>
       </>
     ),

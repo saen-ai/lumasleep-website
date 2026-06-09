@@ -44,24 +44,37 @@ export default function BlogIndex() {
               <Reveal key={post.slug} delay={(i % 2) * 90}>
                 <a href={`/blog/${post.slug}/`} className="group block h-full">
                   <article
-                    className="glass flex h-full flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
+                    className="glass flex h-full flex-col overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
                     style={{ borderColor: "rgba(255,255,255,0.1)" }}
                   >
-                    <div className="text-[0.75rem] uppercase tracking-wider text-cedar">
-                      {formatDate(post.date)} · {post.readingMinutes} min read
-                    </div>
-                    <h2 className="mt-3 font-display text-xl leading-snug">{post.title}</h2>
-                    <p className="mt-2.5 flex-1 text-[0.95rem] leading-relaxed text-cedar">
-                      {post.description}
-                    </p>
-                    <span className="mt-4 inline-flex items-center gap-1.5 text-[0.9rem] font-medium text-amber">
-                      Read guide
-                      <ArrowRightIcon
-                        width={16}
-                        height={16}
-                        className="transition-transform duration-300 group-hover:translate-x-1"
+                    <div className="relative overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={post.cover}
+                        alt={post.coverAlt}
+                        width={1200}
+                        height={630}
+                        loading="lazy"
+                        className="aspect-[40/21] w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                       />
-                    </span>
+                    </div>
+                    <div className="flex flex-1 flex-col p-6">
+                      <div className="text-[0.75rem] uppercase tracking-wider text-cedar">
+                        {formatDate(post.date)} · {post.readingMinutes} min read
+                      </div>
+                      <h2 className="mt-3 font-display text-xl leading-snug">{post.title}</h2>
+                      <p className="mt-2.5 flex-1 text-[0.95rem] leading-relaxed text-cedar">
+                        {post.description}
+                      </p>
+                      <span className="mt-4 inline-flex items-center gap-1.5 text-[0.9rem] font-medium text-amber">
+                        Read guide
+                        <ArrowRightIcon
+                          width={16}
+                          height={16}
+                          className="transition-transform duration-300 group-hover:translate-x-1"
+                        />
+                      </span>
+                    </div>
                   </article>
                 </a>
               </Reveal>

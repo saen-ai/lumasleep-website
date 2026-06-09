@@ -7,7 +7,7 @@ import { StoreButtons } from "@/components/Brand";
 import { JsonLd } from "@/components/JsonLd";
 import { ArrowRightIcon } from "@/components/icons";
 import { getAllSlugs, getPost, formatDate } from "@/lib/posts";
-import { abs, articleLd, breadcrumbLd } from "@/lib/seo";
+import { abs, articleLd, breadcrumbLd, faqPageLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -49,9 +49,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     { name: post.title, path: `/blog/${post.slug}/` },
   ];
 
+  const ld: object[] = [articleLd(post), breadcrumbLd(crumbs)];
+  if (post.faqs?.length) ld.push(faqPageLd(post.faqs));
+
   return (
     <>
-      <JsonLd data={[articleLd(post), breadcrumbLd(crumbs)]} />
+      <JsonLd data={ld} />
       <Nav />
       <main>
         <article className="shell">
@@ -75,10 +78,38 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               </p>
             </Reveal>
 
+            {/* Cover */}
+            <Reveal delay={110}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={post.cover}
+                alt={post.coverAlt}
+                width={1200}
+                height={630}
+                className="mt-8 aspect-[40/21] w-full rounded-2xl object-cover"
+                style={{ border: "1px solid rgba(255,255,255,0.08)" }}
+              />
+            </Reveal>
+
             {/* Body */}
             <Reveal delay={140}>
               <div className="prose mt-8">{post.body}</div>
             </Reveal>
+
+            {/* FAQ */}
+            {post.faqs?.length ? (
+              <Reveal delay={160}>
+                <section className="prose mt-12" aria-label="Frequently asked questions">
+                  <h2>Frequently asked questions</h2>
+                  {post.faqs.map((f) => (
+                    <div key={f.q} className="mt-5">
+                      <h3>{f.q}</h3>
+                      <p>{f.a}</p>
+                    </div>
+                  ))}
+                </section>
+              </Reveal>
+            ) : null}
 
             {/* CTA */}
             <div
