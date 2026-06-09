@@ -80,8 +80,8 @@ const POSTS: Post[] = [
         <h2>How to choose the right sound</h2>
         <ul>
           <li><strong>Need to block noise?</strong> Reach for brown or pink noise.</li>
-          <li><strong>Mind won&apos;t switch off?</strong> Try ocean waves or steady rain.</li>
-          <li><strong>Want cosy and warm?</strong> A fireplace, optionally layered with rain.</li>
+          <li><strong>Mind won&apos;t switch off?</strong> Try <a href="/sounds/ocean/">ocean waves</a> or <a href="/sounds/rain/">steady rain</a>.</li>
+          <li><strong>Want cosy and warm?</strong> A <a href="/sounds/fire/">fireplace</a>, optionally layered with rain.</li>
           <li><strong>Light sleeper?</strong> Soft nature sounds like forest or a gentle creek.</li>
         </ul>
 
@@ -93,7 +93,7 @@ const POSTS: Post[] = [
           too present can keep you alert.
         </p>
         <p>
-          LumaSleep includes 70+ of these sounds across 16 categories, lets you mix several
+          LumaSleep includes <a href="/sounds/">70+ of these sounds across 16 categories</a>, lets you mix several
           together, and has a built-in fade-out timer — so you can build the exact
           texture that sends you off and let it gently switch itself off.
         </p>
@@ -165,7 +165,7 @@ const POSTS: Post[] = [
           doesn&apos;t play at full volume until morning.
         </p>
         <p>
-          LumaSleep includes white, pink, and brown noise alongside rain, fire, and nature
+          LumaSleep includes <a href="/noise/white-noise/">white</a>, <a href="/noise/pink-noise/">pink</a>, and <a href="/noise/brown-noise/">brown</a> noise alongside rain, fire, and nature
           textures, so you can A/B them in the same app — and even layer a noise track under
           rain or waves to find your perfect blend.
         </p>
@@ -233,7 +233,7 @@ const POSTS: Post[] = [
           community of other sleepers.
         </p>
         <p>
-          That&apos;s exactly how LumaSleep&apos;s AI Sound Studio works: describe any
+          That&apos;s exactly how <a href="/ai-sleep-sounds/">LumaSleep&apos;s AI Sound Studio</a> works: describe any
           soundscape, hear it moments later, save it, and — if you want — share it to the
           community for others to fall asleep to.
         </p>
@@ -312,7 +312,7 @@ const POSTS: Post[] = [
         <p>
           LumaSleep syncs with Apple Health and Health Connect to show your nightly score,
           a full stage breakdown, weekly trends, and gentle insights — including which
-          sounds tend to show up on your best nights.
+          <a href="/sounds/deep-sleep/">sleep sounds</a> tend to show up on your best nights.
         </p>
       </>
     ),
@@ -360,7 +360,7 @@ const POSTS: Post[] = [
           <li><strong>Dim the lights</strong> — bright light suppresses melatonin; lower it across the house.</li>
           <li><strong>Put screens away</strong> — or at least stop doom-scrolling; the content keeps your mind alert more than the blue light does.</li>
           <li><strong>Do one calming thing</strong> — a warm shower, light stretching, reading, or journaling.</li>
-          <li><strong>Start your sleep sounds</strong> — the same sound each night becomes a powerful cue that it&apos;s time to sleep.</li>
+          <li><strong><a href="/sounds/">Start your sleep sounds</a></strong> — the same sound each night becomes a powerful cue that it&apos;s time to sleep.</li>
         </ul>
 
         <h2>Make your bedroom boring (in a good way)</h2>
@@ -406,7 +406,7 @@ const POSTS: Post[] = [
         <p>
           Stress and an active brain are the number-one reason people can&apos;t fall asleep.
           When your thoughts won&apos;t quiet, give them somewhere to go: write tomorrow&apos;s
-          to-do list before bed, or try a steady, enveloping sound (like brown noise or rain)
+          to-do list before bed, or try a steady, enveloping sound (like <a href="/noise/brown-noise/">brown noise</a> or <a href="/sounds/rain/">rain</a>)
           that gives your attention something neutral to settle on.
         </p>
 
@@ -452,7 +452,7 @@ const POSTS: Post[] = [
         </p>
         <p>
           For the everyday causes — a busy mind, a noisy room — LumaSleep can help you wind
-          down with calming sounds, AI-generated soundscapes, and a bedtime reminder to keep
+          down with calming sounds, <a href="/ai-sleep-sounds/">AI-generated soundscapes</a>, and a bedtime reminder to keep
           your schedule on track.
         </p>
       </>
@@ -513,8 +513,8 @@ const POSTS: Post[] = [
           immersive scene.
         </p>
         <p>
-          LumaSleep has multiple rain variants — light rain, heavy rain, rain on a roof,
-          thunderstorms — plus the option to mix rain with fire, wind, or nature sounds and
+          LumaSleep has <a href="/sounds/rain/">multiple rain variants</a> — light rain, heavy rain, rain on a roof,
+          <a href="/sounds/thunderstorm/">thunderstorms</a> — plus the option to mix rain with fire, wind, or nature sounds and
           set a timer that fades it all out once you&apos;re asleep.
         </p>
       </>
@@ -543,7 +543,7 @@ const POSTS: Post[] = [
         <p>
           Coloured noise is the most reliable focus tool because it covers the unpredictable
           sounds — a conversation, a notification, a door — that break concentration. Many
-          people find <strong>brown noise</strong> especially good for deep work since its
+          people find <strong><a href="/noise/brown-noise/">brown noise</a></strong> especially good for deep work since its
           low rumble is calming without being distracting.
         </p>
 
@@ -579,7 +579,7 @@ const POSTS: Post[] = [
           interesting — switch to something more neutral.
         </p>
         <p>
-          LumaSleep includes focus music, lo-fi, and coloured-noise tracks alongside its
+          LumaSleep includes focus music, lo-fi, and <a href="/noise/">coloured-noise tracks</a> alongside its
           sleep library, so the same app that helps you wind down at night can help you lock
           in during the day.
         </p>
@@ -693,7 +693,7 @@ const POSTS: Post[] = [
           doesn&apos;t play at full volume until morning.
         </p>
         <p>
-          LumaSleep includes white, pink, brown, and green noise alongside rain, ocean, and
+          LumaSleep includes <a href="/noise/white-noise/">white</a>, pink, brown, and <a href="/noise/green-noise/">green noise</a> alongside rain, ocean, and
           AI-generated soundscapes, so you can compare them all in one app — and even layer a
           noise track under rain or waves to build your perfect blend.
         </p>
@@ -782,7 +782,7 @@ const POSTS: Post[] = [
           options, an app is the more flexible choice.
         </p>
         <p>
-          LumaSleep offers 70+ sounds with a fade-out timer, so you can set the exact texture
+          LumaSleep offers <a href="/sounds/">70+ sounds</a> with a fade-out timer, so you can set the exact texture
           that sends you off and let it switch itself off — every night, safely.
         </p>
       </>
@@ -819,7 +819,7 @@ const POSTS: Post[] = [
     body: (
       <>
         <p>
-          Your iPhone can play white noise all night long — and there are two good ways to do
+          Your iPhone can play <a href="/noise/white-noise/">white noise</a> all night long — and there are two good ways to do
           it. The quickest uses a hidden feature built into iOS; the other uses a dedicated
           sleep-sounds app for more variety and control. Here&apos;s how to set up both so the
           sound keeps playing with the screen off.
@@ -868,7 +868,7 @@ const POSTS: Post[] = [
           gentle fade.
         </p>
         <p>
-          LumaSleep is built for exactly this: 70+ sounds, layering, and a fade-out timer, all
+          LumaSleep is built for exactly this: <a href="/sounds/">70+ sounds</a>, layering, and a fade-out timer, all
           playing reliably in the background while your iPhone is locked — so you drift off and
           it keeps going as long as you need.
         </p>
@@ -926,7 +926,7 @@ const POSTS: Post[] = [
         </p>
         <ul>
           <li><strong>Shushing or fan-like hum</strong> — closest to womb sounds.</li>
-          <li><strong>Brown noise</strong> — deep and low, often more soothing than bright white noise.</li>
+          <li><strong><a href="/noise/brown-noise/">Brown noise</a></strong> — deep and low, often more soothing than bright white noise.</li>
           <li><strong>Steady rainfall</strong> — gentle and continuous.</li>
         </ul>
         <p>
@@ -969,7 +969,7 @@ const POSTS: Post[] = [
         </p>
         <p>
           LumaSleep includes gentle, baby-friendly sounds — soft shushing, brown noise, and
-          steady rain — with a fade-out timer, so you can settle your little one and let the
+          <a href="/sounds/rain/">steady rain</a> — with a fade-out timer, so you can settle your little one and let the
           sound ease off on its own.
         </p>
       </>
@@ -1046,8 +1046,8 @@ const POSTS: Post[] = [
 
         <h2>White noise, green noise, or brown noise on Alexa?</h2>
         <p>
-          Alexa can do more than plain white noise — just ask for &ldquo;green noise&rdquo; or
-          &ldquo;brown noise&rdquo; if you prefer something softer or deeper. Not sure which
+          Alexa can do more than plain white noise — just ask for <a href="/noise/green-noise/">&ldquo;green noise&rdquo;</a> or
+          <a href="/noise/brown-noise/">&ldquo;brown noise&rdquo;</a> if you prefer something softer or deeper. Not sure which
           suits you? Our guide to{" "}
           <a href="/blog/white-noise-vs-green-noise/">white noise vs green noise</a> breaks
           down how each one sounds and what it&apos;s best for.
@@ -1057,7 +1057,7 @@ const POSTS: Post[] = [
         <p>
           Alexa is great for hands-free playback, but a dedicated app lets you mix sounds,
           fine-tune the blend, and take your sleep sounds with you when you travel. LumaSleep
-          offers 70+ sounds, AI-generated soundscapes, and a fade-out timer — your sleep setup
+          offers <a href="/sounds/">70+ sounds</a>, <a href="/ai-sleep-sounds/">AI-generated soundscapes</a>, and a fade-out timer — your sleep setup
           in your pocket, wherever you are.
         </p>
       </>
