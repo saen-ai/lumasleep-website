@@ -1,5 +1,6 @@
 import { FadeUp } from "../FadeUp";
 import { StoreButtons } from "../Brand";
+import { PhoneMockup } from "../PhoneMockup";
 import { SITE } from "@/lib/site";
 
 export function Hero() {
@@ -58,24 +59,7 @@ export function Hero() {
                 animation: "breathe 8s ease-in-out infinite",
               }}
             />
-            {/* Real app "Now Playing" screen (Play Store asset, headline cropped).
-                A radial mask feathers the asset's dark edges into the page so the
-                rectangular bounds never seam against the site's own starfield. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/app-now-playing.webp"
-              alt="The LumaSleep app Now Playing screen, showing a Tibetan Singing Bowl meditative sound with playback controls, a volume slider and a sleep timer"
-              width={900}
-              height={1258}
-              className="relative w-[300px] max-w-full drop-shadow-2xl sm:w-[340px]"
-              style={{
-                height: "auto",
-                WebkitMaskImage:
-                  "radial-gradient(120% 92% at 50% 42%, #000 62%, transparent 100%)",
-                maskImage:
-                  "radial-gradient(120% 92% at 50% 42%, #000 62%, transparent 100%)",
-              }}
-            />
+            <PhoneMockup />
           </div>
         </FadeUp>
       </div>
