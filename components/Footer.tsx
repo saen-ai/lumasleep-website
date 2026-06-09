@@ -2,6 +2,8 @@ import { Logo } from "./Brand";
 import { SITE } from "@/lib/site";
 
 const FOOTER_LINKS = [
+  { label: "Sleep Sounds", href: "/sounds/" },
+  { label: "Noise Colours", href: "/noise/" },
   { label: "Blog", href: "/blog/" },
   { label: "Privacy Policy", href: "/privacy/" },
   { label: "Terms of Service", href: "/terms/" },

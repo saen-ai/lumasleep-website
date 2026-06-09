@@ -16,9 +16,9 @@ export const SITE = {
 // Section anchors are prefixed with "/" so they work from any page (blog,
 // legal) — not just the homepage.
 export const NAV_LINKS = [
-  { label: "Sounds", href: "/#sounds" },
+  { label: "Sounds", href: "/sounds/" },
+  { label: "Noise", href: "/noise/" },
   { label: "AI Studio", href: "/#studio" },
-  { label: "Community", href: "/#community" },
   { label: "Sleep", href: "/#sleep" },
   { label: "Blog", href: "/blog/" },
 ] as const;

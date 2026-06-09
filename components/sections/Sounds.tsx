@@ -35,8 +35,14 @@ export function Sounds() {
         <SectionHeading
           eyebrow="Sound Library"
           title="70+ sounds across 16 categories"
-          blurb="From rain and ocean to fire, classical, ASMR and focus beats — every sound has multiple variants, so you can find the exact texture that sends you off."
+          blurb="From rain sounds and ocean waves to fire, white noise, ASMR and focus beats — every sound has multiple variants, so you can find the exact texture that sends you off."
         />
+        <Reveal>
+          <div className="mt-7 flex flex-wrap justify-center gap-3">
+            <a href="/sounds/" className="chip">Browse all sleep sounds →</a>
+            <a href="/noise/" className="chip">White, pink & brown noise →</a>
+          </div>
+        </Reveal>
       </div>
 
       <Reveal className="mt-14 flex flex-col gap-4">

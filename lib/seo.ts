@@ -58,6 +58,35 @@ export const faqLd = {
   })),
 };
 
+// Generic FAQPage structured data — for any page with a Q&A block
+// (landing pages, etc). The homepage uses the pre-built `faqLd` above.
+export function faqPageLd(faqs: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+}
+
+// ItemList for hub pages — tells search engines the set of pages a hub
+// links to, which helps surface them as a related cluster.
+export function itemListLd(items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: abs(item.path),
+    })),
+  };
+}
+
 // BlogPosting structured data for an individual article.
 export function articleLd(post: {
   slug: string;
