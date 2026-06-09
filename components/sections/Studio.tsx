@@ -43,6 +43,12 @@ export function Studio() {
               ))}
             </ul>
           </Reveal>
+
+          <Reveal delay={300}>
+            <a href="/ai-sleep-sounds/" className="mt-7 inline-flex items-center gap-1.5 text-[0.95rem] font-medium text-amber">
+              How AI sleep sounds work <ArrowRightIcon width={16} height={16} />
+            </a>
+          </Reveal>
         </div>
 
         {/* Visual: prompt -> generated sound */}
