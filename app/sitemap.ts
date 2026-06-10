@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/noise/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.url}/noise-generator/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.url}/ai-sleep-sounds/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE.url}/sound-machine/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     ...sounds,
     ...noise,
     { url: `${SITE.url}/blog/`, lastModified, changeFrequency: "weekly", priority: 0.8 },

@@ -779,7 +779,7 @@ const POSTS: Post[] = [
           <a href="/blog/white-noise-on-iphone-all-night/">sleep-sounds app on your phone</a>{" "}
           gives you far more variety — dozens of sounds, the ability to mix several together,
           and a built-in fade-out timer — without buying extra hardware. If you like having
-          options, an app is the more flexible choice.
+          options, a <a href="/sound-machine/">sound machine app</a> like LumaSleep is the more flexible choice.
         </p>
         <p>
           LumaSleep offers <a href="/sounds/">70+ sounds</a> with a fade-out timer, so you can set the exact texture

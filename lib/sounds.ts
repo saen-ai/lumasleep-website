@@ -181,7 +181,7 @@ export const SOUNDS: Landing[] = [
         a: "Yes. In LumaSleep you can layer ocean waves with rain, wind, or seabirds and adjust each volume to build your own coastal soundscape.",
       },
     ],
-    related: ["rain", "deep-sleep", "fan"],
+    related: ["water", "rain", "deep-sleep"],
     relatedPost: "best-sounds-to-fall-asleep-fast",
   },
   {
@@ -319,7 +319,7 @@ export const SOUNDS: Landing[] = [
         a: "Yes. Connect Apple Health or Health Connect and LumaSleep gives you a 0–100 sleep score with a deep, REM, light and awake stage breakdown each morning.",
       },
     ],
-    related: ["fan", "ocean", "rain"],
+    related: ["nature", "fan", "ocean"],
     relatedPost: "understanding-your-sleep-score",
   },
   {
@@ -409,6 +409,98 @@ export const SOUNDS: Landing[] = [
     ],
     related: ["deep-sleep", "ocean", "rain"],
     relatedPost: "best-sounds-for-focus-and-studying",
+  },
+  {
+    slug: "water",
+    glyph: "💧",
+    h1: "Water Sounds for Sleep",
+    title: "Water Sounds for Sleep — Streams, Waterfalls & Flow",
+    description:
+      "Fall asleep to flowing water — gentle streams, waterfalls and babbling creeks. LumaSleep's water sounds for sleep mask noise with soft, continuous, natural sound.",
+    keywords: [
+      "water sounds for sleep",
+      "water sounds for sleeping",
+      "waterfall sounds for sleeping",
+      "stream sounds for sleep",
+      "flowing water sounds",
+    ],
+    tagline: "Streams, waterfalls & flowing creeks",
+    intro:
+      "Few sounds switch the mind off as gently as moving water. The soft, continuous rush of a stream or waterfall is rich, natural, and endlessly varied without ever being jarring — which is why water sounds for sleep are among the most popular ways to drift off. LumaSleep gives you flowing water in several forms, from a quiet babbling creek to a steady waterfall.",
+    sections: [
+      {
+        h2: "Why water sounds help you sleep",
+        paras: [
+          "Flowing water produces a broad, gentle wash of sound — close to natural pink noise — that masks the sudden noises which would otherwise pull you awake. Because the sound is steady yet softly random, your brain finds it soothing to follow rather than alerting.",
+          "Water is also deeply associated with calm and safety, so it lowers arousal and helps your nervous system settle into rest mode — exactly the state you want for falling asleep.",
+        ],
+      },
+      {
+        h2: "Streams, waterfalls, and creeks",
+        paras: [
+          "A gentle babbling creek gives light sleepers soft texture without much volume. A fuller waterfall creates a broader sound blanket — closer to white noise — for masking louder disturbances. LumaSleep lets you choose the intensity that suits your room and your night.",
+          "Water layers beautifully with rain, forest ambience, or birdsong for a complete outdoor scene, and the sleep timer fades it out gently after you drift off.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Are water sounds good for sleep?",
+        a: "Yes. The steady, gentle rush of streams and waterfalls masks disruptive noise while staying soothing rather than alerting — one of the most natural ways to wind down a busy mind.",
+      },
+      {
+        q: "What water sounds does LumaSleep have?",
+        a: "Flowing streams, waterfalls and babbling creeks, which you can layer with rain, ocean or forest sounds and fade out on a sleep timer.",
+      },
+    ],
+    related: ["ocean", "rain", "nature"],
+    relatedPost: "best-sounds-to-fall-asleep-fast",
+  },
+  {
+    slug: "nature",
+    glyph: "🌲",
+    h1: "Nature Sounds for Sleep",
+    title: "Nature Sounds for Sleep — Forest, Crickets & Birdsong",
+    description:
+      "Drift off to the outdoors — forest ambience, crickets, birdsong and rainforest. LumaSleep's nature sounds for sleep bring calming, organic texture to your night.",
+    keywords: [
+      "nature sounds for sleep",
+      "nature sounds for sleeping",
+      "forest sounds for sleep",
+      "cricket sounds for sleep",
+      "rainforest sounds for sleeping",
+    ],
+    tagline: "Forest, crickets, birdsong & rainforest",
+    intro:
+      "Birdsong at dusk, crickets on a warm night, wind through the trees, a creek in the distance — nature sounds for sleep tap into a deep, ancient sense of safety and calm. They're the perfect choice for light sleepers who prefer organic texture over a flat wall of noise.",
+    sections: [
+      {
+        h2: "Why nature sounds are so calming",
+        paras: [
+          "Humans are wired to relax in safe natural settings, and gentle outdoor sounds signal exactly that. Soft, irregular textures — leaves, crickets, distant birds — give the mind something pleasant and low-stakes to rest on, easing the loop of racing thoughts that keeps people awake.",
+          "Unlike a steady noise track, nature ambience stays subtly alive, which many people find more comforting than a flat hiss for a full night's sleep.",
+        ],
+      },
+      {
+        h2: "Forest, crickets, birdsong, and rainforest",
+        paras: [
+          "LumaSleep includes a range of outdoor scenes: a quiet forest at night, chirping crickets, gentle birdsong, and lush rainforest. Crickets and night insects are especially good for masking household noise with a steady, rhythmic texture.",
+          "Layer nature with rain, a creek, or a distant thunderstorm to build your own outdoor night — then set the sleep timer so it fades out once you've drifted off.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Are nature sounds good for sleep?",
+        a: "Yes, especially for light sleepers. Gentle outdoor sounds like forest, crickets and birdsong signal safety and calm, giving the mind soothing, organic texture to settle on.",
+      },
+      {
+        q: "What nature sounds does LumaSleep include?",
+        a: "Forest ambience, crickets, birdsong, rainforest and creeks — all of which you can layer with rain or water and fade out on a sleep timer.",
+      },
+    ],
+    related: ["water", "rain", "deep-sleep"],
+    relatedPost: "best-sounds-to-fall-asleep-fast",
   },
 ];
 

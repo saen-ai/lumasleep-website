@@ -15,8 +15,12 @@ export const metadata: Metadata = {
     "Create your own sleep sounds with AI. Describe any soundscape in plain words and LumaSleep generates a unique, personalized sleep sound in seconds. Free to try.",
   keywords: [
     "ai sleep sounds",
+    "ai sleep sound generator",
     "create your own sleep sounds",
     "personalized sleep sounds",
+    "nightly ai sleep sounds",
+    "ai relaxation sounds",
+    "ai generated sleep sounds",
     "ai soundscapes",
     "ai sound generator",
   ],
@@ -46,6 +50,14 @@ const FAQS = [
   {
     q: "Can I share what I make?",
     a: "Yes. From any generated sound you can publish it to the Community with a title and mood tags, so other dreamers can discover, play, and save your creation.",
+  },
+  {
+    q: "Is there an AI sleep sound generator?",
+    a: "Yes — the AI Sound Studio is essentially an AI sleep sound generator. Instead of picking from fixed tracks, you type a description and it generates a brand-new soundscape on demand, then saves it to your library.",
+  },
+  {
+    q: "Can it make nightly AI sleep sounds?",
+    a: "Absolutely. Generate a fresh sound each night from a new prompt, or replay saved favourites — and use the sleep timer to fade them out gently. No two nights have to sound the same.",
   },
   {
     q: "Is AI sound generation free?",
