@@ -19,8 +19,7 @@ export type Post = {
 const POSTS: Post[] = [
   {
     slug: "brown-noise-for-adhd",
-    // TODO: replace placeholder cover with generated /blog/brown-noise-for-adhd.webp
-    cover: "/blog/best-sounds-for-focus-and-studying.webp",
+    cover: "/blog/brown-noise-for-adhd.webp",
     coverAlt: "Deep brown soundwaves over a calm night sky — brown noise for ADHD focus",
     title: "Brown Noise for ADHD: Does It Really Help You Focus?",
     description:
@@ -105,8 +104,7 @@ const POSTS: Post[] = [
   },
   {
     slug: "best-sounds-for-anxiety",
-    // TODO: replace placeholder cover with generated /blog/best-sounds-for-anxiety.webp
-    cover: "/blog/why-cant-i-sleep.webp",
+    cover: "/blog/best-sounds-for-anxiety.webp",
     coverAlt: "Soft calming soundwaves over a serene night sky — the best sounds for anxiety and stress relief",
     title: "The Best Sounds for Anxiety and Stress Relief",
     description:
@@ -178,8 +176,7 @@ const POSTS: Post[] = [
   },
   {
     slug: "white-noise-for-tinnitus",
-    // TODO: replace placeholder cover with generated /blog/white-noise-for-tinnitus.webp
-    cover: "/blog/white-noise-vs-pink-noise-vs-brown-noise.webp",
+    cover: "/blog/white-noise-for-tinnitus.webp",
     coverAlt: "Layered soundwaves over a night sky — white noise for tinnitus relief and sound masking",
     title: "White Noise for Tinnitus: How Sound Masking Helps",
     description:
@@ -251,8 +248,7 @@ const POSTS: Post[] = [
   },
   {
     slug: "white-noise-for-office",
-    // TODO: replace placeholder cover with generated /blog/white-noise-for-office.webp
-    cover: "/blog/best-sounds-for-focus-and-studying.webp",
+    cover: "/blog/white-noise-for-office.webp",
     coverAlt: "Calm soundwaves over a workspace at night — white noise for the office and open-plan focus",
     title: "The Best White Noise for the Office and Open-Plan Work",
     description:
@@ -318,27 +314,26 @@ const POSTS: Post[] = [
     ),
   },
   {
-    slug: "sounds-to-calm-a-dog",
-    // TODO: replace placeholder cover with generated /blog/sounds-to-calm-a-dog.webp
-    cover: "/blog/best-sounds-to-fall-asleep-fast.webp",
-    coverAlt: "A calm dog resting at night with soft soundwaves — sounds to calm an anxious dog",
-    title: "Sounds to Calm an Anxious Dog: Fireworks, Storms & More",
+    slug: "sounds-to-calm-anxious-pets",
+    cover: "/blog/sounds-to-calm-anxious-pets.webp",
+    coverAlt: "A calm cat resting on a blanket at night with soft soundwaves — sounds to calm anxious pets, dogs and cats",
+    title: "Sounds to Calm an Anxious Dog or Cat",
     description:
-      "Fireworks, thunderstorms, and being left alone can terrify dogs. Here are the best sounds to calm an anxious dog — from white noise to rain — and how to use them.",
+      "Fireworks, thunderstorms, and being left alone can terrify pets. Here are the best sounds to calm an anxious dog or cat — from white noise to rain — and how to use them.",
     date: "2026-06-10",
     readingMinutes: 5,
-    keywords: ["sounds to calm dogs", "white noise for dogs", "music to calm dogs", "sounds for anxious dogs", "dog anxiety sounds"],
+    keywords: ["sounds to calm dogs", "white noise for dogs", "sounds to calm cats", "white noise for cats", "pet anxiety sounds"],
     faqs: [
       {
-        q: "Do sounds really calm anxious dogs?",
-        a: "Often, yes. Steady background sound masks the sudden noises — fireworks, thunder, doorbells — that trigger a dog's fear response, and a consistent, soothing soundscape can help an anxious dog feel safer, especially when left alone.",
+        q: "Do sounds really calm anxious pets?",
+        a: "Often, yes. Steady background sound masks the sudden noises — fireworks, thunder, doorbells — that trigger a fear response in dogs and cats, and a consistent, soothing soundscape can help an anxious pet feel safer, especially when home alone.",
       },
       {
-        q: "What sound is best for calming a dog?",
-        a: "White noise and steady rain are great for masking scary noises like fireworks and storms. Soft, slow music also calms many dogs. Keep the volume gentle — a dog's hearing is far more sensitive than ours.",
+        q: "What sound is best for calming a dog or cat?",
+        a: "White noise and steady rain are great for masking scary noises like fireworks and storms for both dogs and cats. Soft, slow music calms many dogs, while many cats settle to gentle rain or low, purr-like tones. Keep the volume gentle — pets' hearing is far more sensitive than ours.",
       },
       {
-        q: "Should I see a vet about my dog's anxiety?",
+        q: "Should I see a vet about my pet's anxiety?",
         a: "Yes, if the anxiety is severe, worsening, or includes destructive behaviour or distress when alone. Sound is a helpful comfort tool, but a vet can rule out medical causes and recommend a proper plan.",
       },
     ],
@@ -346,45 +341,45 @@ const POSTS: Post[] = [
       <>
         <p>
           Fireworks night, a sudden thunderstorm, or simply being left home alone — for an anxious
-          dog, these can be genuinely terrifying. The good news: the same trick that helps humans
-          sleep through noise works for dogs too. The right sound can mask the scary stuff and help
-          your pet feel safe. Here&apos;s how to use it.
+          dog or cat, these can be genuinely terrifying. The good news: the same trick that helps
+          humans sleep through noise works for pets too. The right sound can mask the scary stuff
+          and help your animal feel safe. Here&apos;s how to use it.
         </p>
 
-        <h2>Why sound helps an anxious dog</h2>
+        <h2>Why sound helps an anxious pet</h2>
         <p>
-          Dogs have far more sensitive hearing than we do, so the bangs and rumbles that startle us
-          are overwhelming to them. A steady background sound <strong>masks those sudden
+          Dogs and cats have far more sensitive hearing than we do, so the bangs and rumbles that
+          startle us are overwhelming to them. A steady background sound <strong>masks those sudden
           noises</strong> — softening the sharp edge of a firework or a thunderclap — and creates a
           calm, predictable soundscape that signals safety, especially when you can&apos;t be there.
         </p>
 
-        <h2>The best sounds to calm a dog</h2>
+        <h2>The best sounds to calm a dog or cat</h2>
         <ul>
-          <li><strong><a href="/noise/white-noise/">White noise</a></strong> — excellent for masking fireworks and sudden bangs.</li>
+          <li><strong><a href="/noise/white-noise/">White noise</a></strong> — excellent for masking fireworks and sudden bangs for both dogs and cats.</li>
           <li><strong><a href="/noise/brown-noise/">Brown noise</a></strong> — a deep, low rumble that&apos;s gentle on sensitive ears.</li>
           <li><strong><a href="/sounds/rain/">Steady rain</a></strong> — soothing and great for covering thunder during a storm.</li>
-          <li><strong>Soft, slow music</strong> — calms many dogs and is ideal for separation anxiety.</li>
+          <li><strong>Soft, slow music</strong> — calms many dogs, while cats often settle to gentle, purr-like low tones — ideal for separation anxiety.</li>
         </ul>
 
         <h2>How to use it</h2>
         <ul>
-          <li>Start the sound <strong>before</strong> the scary event (e.g. ahead of a fireworks display), so your dog is already settled.</li>
+          <li>Start the sound <strong>before</strong> the scary event (e.g. ahead of a fireworks display), so your pet is already settled.</li>
           <li>Keep the volume <strong>gentle</strong> — loud enough to mask, never startling.</li>
-          <li>Use it consistently so your dog learns to associate the sound with calm and safety.</li>
-          <li>Pair it with a cosy, enclosed space where your dog feels secure.</li>
+          <li>Use it consistently so your pet learns to associate the sound with calm and safety.</li>
+          <li>Pair it with a cosy, enclosed space where your dog or cat feels secure.</li>
         </ul>
 
         <h2>One calm soundscape, on demand</h2>
         <p>
           LumaSleep makes it easy to keep a calming sound going — <a href="/sounds/">rain, white
           noise, or a gentle mix</a> — with a timer and volume control, on your phone, wherever you
-          and your dog are. It&apos;s the same app you use to wind down at night, now working for
-          your best friend too.
+          and your pet are. It&apos;s the same app you use to wind down at night, now working for
+          your furry friend too.
         </p>
 
         <p>
-          If your dog&apos;s anxiety is severe or includes real distress when alone, please talk to
+          If your pet&apos;s anxiety is severe or includes real distress when alone, please talk to
           your vet — sound is a comfort, not a substitute for proper care.
         </p>
       </>
