@@ -18,6 +18,379 @@ export type Post = {
 // computed in getAllPosts().
 const POSTS: Post[] = [
   {
+    slug: "brown-noise-for-adhd",
+    // TODO: replace placeholder cover with generated /blog/brown-noise-for-adhd.webp
+    cover: "/blog/best-sounds-for-focus-and-studying.webp",
+    coverAlt: "Deep brown soundwaves over a calm night sky — brown noise for ADHD focus",
+    title: "Brown Noise for ADHD: Does It Really Help You Focus?",
+    description:
+      "Brown noise has gone viral for ADHD focus. Here's what brown noise is, why so many people with ADHD find it calming, and how to use it to actually concentrate.",
+    date: "2026-06-10",
+    readingMinutes: 6,
+    keywords: ["brown noise for adhd", "white noise for adhd", "brown noise focus", "adhd sounds", "sounds for adhd"],
+    faqs: [
+      {
+        q: "Is brown noise good for ADHD?",
+        a: "Many people with ADHD report that brown noise helps them focus and feel calmer, likely because its steady, low-frequency rumble masks distractions and gives an under-stimulated attention system something consistent to lock onto. Evidence is still early and it isn't a treatment, but it's a free, low-risk thing to try.",
+      },
+      {
+        q: "Is brown noise or white noise better for ADHD?",
+        a: "It's personal. White noise is brighter and masks a wider range of sounds; brown noise is deeper and warmer, which many people with ADHD find less harsh over long work sessions. Try both for a few days each and keep whichever helps you settle into work faster.",
+      },
+      {
+        q: "How do you use brown noise to focus?",
+        a: "Play it at a moderate volume (ideally through headphones), start it as you begin a focused work block, and pair it with a timer. Keep it steady in the background — the goal is for it to fade from your awareness while it quietly blocks distractions.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          If your brain feels like fourteen browser tabs open at once, you&apos;re not alone —
+          and you&apos;ve probably seen people with ADHD raving about <strong>brown noise</strong>.
+          The deep, rumbling sound has gone viral as a focus aid. Here&apos;s what brown noise
+          actually is, why so many ADHD brains find it calming, and how to use it to get into the
+          zone.
+        </p>
+
+        <h2>What is brown noise?</h2>
+        <p>
+          Brown noise contains every frequency at once, but with the energy weighted heavily
+          toward the <strong>low end</strong> — so instead of a bright hiss, you get a deep,
+          soft rumble, like a distant waterfall, heavy rainfall, or the cabin of a plane. It&apos;s
+          the warmest and most enveloping of the noise colours, which is exactly why it tends to
+          feel soothing rather than harsh. (Here&apos;s a deeper look at{" "}
+          <a href="/noise/brown-noise/">brown noise for sleep and focus</a>.)
+        </p>
+
+        <h2>Why ADHD brains seem to love it</h2>
+        <p>
+          There are two simple reasons brown noise resonates with so many people who have ADHD:
+        </p>
+        <ul>
+          <li><strong>It masks distractions.</strong> A constant low rumble covers the sudden, attention-grabbing sounds — a notification, a conversation, a door — that derail focus.</li>
+          <li><strong>It feeds an under-stimulated attention system.</strong> Many people with ADHD focus better with a steady background &ldquo;floor&rdquo; of sound, which gives a restless mind something neutral to settle on instead of chasing every new noise.</li>
+        </ul>
+        <p>
+          The research is still early, so treat brown noise as a helpful tool rather than a
+          treatment — but it&apos;s free, instant, and harmless to experiment with.
+        </p>
+
+        <h2>Brown vs white vs pink noise for ADHD</h2>
+        <p>
+          If brown noise feels too heavy or muffled, the other colours are worth a try.{" "}
+          <a href="/noise/white-noise/">White noise</a> is brighter and masks the widest range of
+          sounds; pink noise sits in between — softer than white, lighter than brown. As a rule of
+          thumb: choose <strong>brown</strong> for deep, cosy focus, <strong>white</strong> when
+          you need to block sharp, high-pitched noise, and pink if you want a natural middle ground.
+        </p>
+
+        <h2>How to actually use it for focus</h2>
+        <ul>
+          <li>Keep the volume <strong>moderate</strong> — loud enough to cover interruptions, not so loud it becomes the distraction.</li>
+          <li>Use <strong>headphones</strong> in shared or noisy spaces for the best masking.</li>
+          <li>Start the sound as you begin a work block, and pair it with a <strong>timer</strong> (try a 25-minute focus sprint).</li>
+          <li>Give it a few sessions — your brain learns to associate the sound with &ldquo;focus mode.&rdquo;</li>
+        </ul>
+
+        <h2>Build your own focus sound</h2>
+        <p>
+          Plain brown noise is a great start, but you can go further. In LumaSleep you can layer
+          brown noise under <a href="/sounds/">rain or a fan</a> for extra texture, or use the AI
+          Sound Studio to <a href="/ai-sleep-sounds/">describe and generate your own focus
+          soundscape</a> — the exact blend that quiets your mind. Set a timer, press play, and let
+          the noise do the heavy lifting while you work.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "best-sounds-for-anxiety",
+    // TODO: replace placeholder cover with generated /blog/best-sounds-for-anxiety.webp
+    cover: "/blog/why-cant-i-sleep.webp",
+    coverAlt: "Soft calming soundwaves over a serene night sky — the best sounds for anxiety and stress relief",
+    title: "The Best Sounds for Anxiety and Stress Relief",
+    description:
+      "When your mind won't slow down, the right sound can help. Here are the best sounds for anxiety and stress relief — from rain and ocean to white noise — and why they work.",
+    date: "2026-06-10",
+    readingMinutes: 6,
+    keywords: ["sounds for anxiety", "calming sounds for anxiety", "white noise for anxiety", "sounds for stress", "calming sounds"],
+    faqs: [
+      {
+        q: "What sounds are best for anxiety?",
+        a: "Slow, steady, natural sounds tend to calm anxiety best — rain, ocean waves, gentle wind, and soft white or pink noise. They mask jarring noise and give a racing mind something steady to focus on, which can help lower arousal.",
+      },
+      {
+        q: "Does white noise help with anxiety?",
+        a: "For many people, yes. A steady background sound reduces the impact of sudden, startling noises and creates a sense of calm, contained space — which can quiet the hypervigilance that comes with anxiety. Keep the volume gentle.",
+      },
+      {
+        q: "Can sounds help with panic attacks?",
+        a: "Calming sounds can be a useful part of grounding during anxiety, but they aren't a treatment. If you experience frequent panic attacks or persistent anxiety, please talk to a healthcare professional.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          Anxiety loves silence. When there&apos;s nothing else to focus on, the mind fills the
+          quiet with worry, replaying worst-case scenarios on a loop. The right sound interrupts
+          that loop — giving your attention somewhere calm to rest. Here are the most effective
+          sounds for anxiety and stress relief, and why they work.
+        </p>
+
+        <h2>Why sound calms an anxious mind</h2>
+        <p>
+          A steady, gentle sound does two things at once: it <strong>masks</strong> the sudden
+          noises that keep an anxious nervous system on alert, and it gives your racing thoughts a
+          neutral, low-stakes anchor to settle on. That combination helps shift your body out of
+          &ldquo;fight or flight&rdquo; and into a calmer, rest-and-digest state.
+        </p>
+
+        <h2>The best sounds for anxiety</h2>
+        <ul>
+          <li><strong><a href="/sounds/rain/">Rain</a></strong> — soft, continuous, and full of gentle randomness the brain finds soothing. The go-to for quieting a busy mind.</li>
+          <li><strong><a href="/sounds/ocean/">Ocean waves</a></strong> — the slow rise and fall mirrors calm breathing, which can help slow your heart rate.</li>
+          <li><strong><a href="/noise/white-noise/">White or pink noise</a></strong> — best when you need to block out a noisy, unpredictable environment that&apos;s keeping you on edge.</li>
+          <li><strong>Forest and nature</strong> — birdsong, wind, and a distant creek tap into a deep sense of safety.</li>
+        </ul>
+
+        <h2>How to use them</h2>
+        <p>
+          Keep the volume <strong>low and steady</strong> — calming sounds work by fading into the
+          background, not by drowning everything out. Pair them with slow breathing: inhale for
+          four counts, exhale for six, and let the sound carry your attention. A few minutes is
+          often enough to take the edge off a spike of stress.
+        </p>
+
+        <h2>Make a sound that&apos;s yours</h2>
+        <p>
+          The most calming sound is the one that feels safe to <em>you</em> — and that&apos;s
+          rarely a single preset. With LumaSleep you can mix rain with distant thunder, or
+          <a href="/ai-sleep-sounds/"> describe your own calming soundscape</a> and let AI create
+          it. Set a timer, breathe, and let the noise settle your mind.
+        </p>
+
+        <p>
+          A note: calming sounds are a helpful tool, not a cure. If anxiety is affecting your daily
+          life, please reach out to a healthcare professional.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "white-noise-for-tinnitus",
+    // TODO: replace placeholder cover with generated /blog/white-noise-for-tinnitus.webp
+    cover: "/blog/white-noise-vs-pink-noise-vs-brown-noise.webp",
+    coverAlt: "Layered soundwaves over a night sky — white noise for tinnitus relief and sound masking",
+    title: "White Noise for Tinnitus: How Sound Masking Helps",
+    description:
+      "White noise can make the ringing of tinnitus easier to live with. Here's how sound masking works, which noise colours help, and how to use them for relief.",
+    date: "2026-06-10",
+    readingMinutes: 6,
+    keywords: ["white noise for tinnitus", "sounds for tinnitus", "tinnitus masking", "tinnitus relief sounds", "pink noise for tinnitus"],
+    faqs: [
+      {
+        q: "Does white noise help tinnitus?",
+        a: "For many people, yes. White noise doesn't cure tinnitus, but it can 'mask' the ringing — making it less noticeable and less distressing, especially in quiet rooms and at bedtime when tinnitus often feels loudest.",
+      },
+      {
+        q: "What is the best sound for tinnitus?",
+        a: "It varies by person. White, pink and brown noise are common choices, as are natural sounds like rain and ocean. The aim is a sound that sits at a similar pitch to your tinnitus and blends it into the background — soft enough that you can still hear, but enough to take the edge off.",
+      },
+      {
+        q: "Should I see a doctor about tinnitus?",
+        a: "Yes. Sound masking is a self-help comfort tool, not a diagnosis or treatment. If you have new, persistent, one-sided, or worsening tinnitus, see a doctor or audiologist to rule out underlying causes and discuss options.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          Tinnitus — the ringing, buzzing, or hissing that only you can hear — is often at its
+          worst in quiet moments, especially as you&apos;re trying to fall asleep. That&apos;s
+          where <strong>sound masking</strong> comes in. It won&apos;t make tinnitus disappear, but
+          for a lot of people it makes it far easier to live with. Here&apos;s how it works.
+        </p>
+
+        <h2>How sound masking helps</h2>
+        <p>
+          In silence, your brain turns up its sensitivity and the tinnitus stands out sharply.
+          Adding a gentle, steady background sound gives your ears something else to listen to, so
+          the ringing blends in and stops demanding your attention. The relief is immediate while
+          the sound plays, and many people find it especially helpful for getting to sleep.
+        </p>
+
+        <h2>Which sounds work best</h2>
+        <ul>
+          <li><strong><a href="/noise/white-noise/">White noise</a></strong> — broad and even, it covers the widest range of tinnitus pitches.</li>
+          <li><strong><a href="/noise/pink-noise/">Pink noise</a></strong> — softer and warmer than white, which many people find more comfortable for long periods.</li>
+          <li><strong>Brown noise</strong> — deep and low, good if your tinnitus is higher-pitched and you want a gentle contrast.</li>
+          <li><strong><a href="/sounds/ocean/">Ocean and rain</a></strong> — natural alternatives that feel less clinical than pure noise.</li>
+        </ul>
+
+        <h2>How to use it for relief</h2>
+        <p>
+          The goal is <strong>partial masking</strong>, not blasting the ringing into oblivion.
+          Set the volume just loud enough that the tinnitus fades into the background — you should
+          still be able to hear the sound comfortably. At night, a fade-out timer lets the sound
+          carry you to sleep without running at full volume until morning.
+        </p>
+
+        <h2>Find your match</h2>
+        <p>
+          Because the right masking sound is so personal, it helps to compare several. LumaSleep
+          lets you switch between <a href="/noise/white-noise/">white, pink, and brown noise</a>{" "}
+          plus rain and ocean, mix them, and set a sleep timer — so you can dial in the exact tone
+          that quiets your ears.
+        </p>
+
+        <p>
+          Important: this is general comfort advice, not medical guidance. If your tinnitus is new,
+          persistent, one-sided, or getting worse, please see a doctor or audiologist.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "white-noise-for-office",
+    // TODO: replace placeholder cover with generated /blog/white-noise-for-office.webp
+    cover: "/blog/best-sounds-for-focus-and-studying.webp",
+    coverAlt: "Calm soundwaves over a workspace at night — white noise for the office and open-plan focus",
+    title: "The Best White Noise for the Office and Open-Plan Work",
+    description:
+      "Open-plan offices are full of focus-killing chatter. Here's how white noise masks office distractions, which sounds work best, and how to use it at your desk.",
+    date: "2026-06-10",
+    readingMinutes: 5,
+    keywords: ["white noise for office", "office background noise", "mask conversations", "white noise for work", "focus at work"],
+    faqs: [
+      {
+        q: "Does white noise help in an office?",
+        a: "Yes. White noise is especially good at masking nearby speech — the most distracting office sound — by filling the gaps between words so conversations become an indistinct hum instead of something your brain tries to follow.",
+      },
+      {
+        q: "What's the best sound to block office noise?",
+        a: "White noise (or a fan-like hum) is the most effective at masking chatter, since it covers the speech frequency range. If you find it harsh, steady rain or a coffee-shop ambience works well and feels more pleasant over a full workday.",
+      },
+      {
+        q: "Is it bad to wear headphones with white noise all day?",
+        a: "It's generally fine if you keep the volume moderate. Follow a simple rule: if you can't hold a normal conversation over it, or your ears feel tired, it's too loud — turn it down.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          The single biggest focus-killer in an open-plan office isn&apos;t noise in general —
+          it&apos;s <strong>overheard conversation</strong>. Your brain is wired to follow speech,
+          so a colleague&apos;s phone call three desks away hijacks your attention whether you want
+          it to or not. The fix: mask it. Here&apos;s how to use white noise to reclaim your focus
+          at work.
+        </p>
+
+        <h2>Why white noise beats office chatter</h2>
+        <p>
+          Speech is distracting because of the <em>gaps</em> — your brain latches onto words and
+          fills in the rest. <a href="/noise/white-noise/">White noise</a> covers the same
+          frequency range as human speech, so it smooths those gaps into a steady wash. The
+          conversation becomes an indistinct hum, and your concentration stays where you put it.
+        </p>
+
+        <h2>The best office sounds</h2>
+        <ul>
+          <li><strong>White noise</strong> — the most effective at masking nearby speech.</li>
+          <li><strong>Brown noise or a fan hum</strong> — deeper and warmer if white noise feels too sharp for a full day.</li>
+          <li><strong>Steady rain</strong> — a more natural, pleasant option that still covers chatter.</li>
+          <li><strong>Coffee-shop ambience</strong> — a low background buzz that many people find boosts focus and creativity.</li>
+        </ul>
+
+        <h2>How to use it at your desk</h2>
+        <p>
+          Use <strong>headphones</strong> — they block more sound and keep it from disturbing
+          neighbours. Keep the volume moderate (you should still hear someone say your name), and
+          start the sound at the beginning of a focus block so it becomes your cue to lock in.
+        </p>
+
+        <h2>Mix your perfect work sound</h2>
+        <p>
+          One flat track gets old by 3pm. With LumaSleep you can{" "}
+          <a href="/noise-generator/">build your own background mix</a> — say, white noise under
+          light rain — or browse <a href="/sounds/">dozens of focus sounds</a> and switch it up
+          through the day. Same app for deep work by day and winding down at night.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "sounds-to-calm-a-dog",
+    // TODO: replace placeholder cover with generated /blog/sounds-to-calm-a-dog.webp
+    cover: "/blog/best-sounds-to-fall-asleep-fast.webp",
+    coverAlt: "A calm dog resting at night with soft soundwaves — sounds to calm an anxious dog",
+    title: "Sounds to Calm an Anxious Dog: Fireworks, Storms & More",
+    description:
+      "Fireworks, thunderstorms, and being left alone can terrify dogs. Here are the best sounds to calm an anxious dog — from white noise to rain — and how to use them.",
+    date: "2026-06-10",
+    readingMinutes: 5,
+    keywords: ["sounds to calm dogs", "white noise for dogs", "music to calm dogs", "sounds for anxious dogs", "dog anxiety sounds"],
+    faqs: [
+      {
+        q: "Do sounds really calm anxious dogs?",
+        a: "Often, yes. Steady background sound masks the sudden noises — fireworks, thunder, doorbells — that trigger a dog's fear response, and a consistent, soothing soundscape can help an anxious dog feel safer, especially when left alone.",
+      },
+      {
+        q: "What sound is best for calming a dog?",
+        a: "White noise and steady rain are great for masking scary noises like fireworks and storms. Soft, slow music also calms many dogs. Keep the volume gentle — a dog's hearing is far more sensitive than ours.",
+      },
+      {
+        q: "Should I see a vet about my dog's anxiety?",
+        a: "Yes, if the anxiety is severe, worsening, or includes destructive behaviour or distress when alone. Sound is a helpful comfort tool, but a vet can rule out medical causes and recommend a proper plan.",
+      },
+    ],
+    body: (
+      <>
+        <p>
+          Fireworks night, a sudden thunderstorm, or simply being left home alone — for an anxious
+          dog, these can be genuinely terrifying. The good news: the same trick that helps humans
+          sleep through noise works for dogs too. The right sound can mask the scary stuff and help
+          your pet feel safe. Here&apos;s how to use it.
+        </p>
+
+        <h2>Why sound helps an anxious dog</h2>
+        <p>
+          Dogs have far more sensitive hearing than we do, so the bangs and rumbles that startle us
+          are overwhelming to them. A steady background sound <strong>masks those sudden
+          noises</strong> — softening the sharp edge of a firework or a thunderclap — and creates a
+          calm, predictable soundscape that signals safety, especially when you can&apos;t be there.
+        </p>
+
+        <h2>The best sounds to calm a dog</h2>
+        <ul>
+          <li><strong><a href="/noise/white-noise/">White noise</a></strong> — excellent for masking fireworks and sudden bangs.</li>
+          <li><strong><a href="/noise/brown-noise/">Brown noise</a></strong> — a deep, low rumble that&apos;s gentle on sensitive ears.</li>
+          <li><strong><a href="/sounds/rain/">Steady rain</a></strong> — soothing and great for covering thunder during a storm.</li>
+          <li><strong>Soft, slow music</strong> — calms many dogs and is ideal for separation anxiety.</li>
+        </ul>
+
+        <h2>How to use it</h2>
+        <ul>
+          <li>Start the sound <strong>before</strong> the scary event (e.g. ahead of a fireworks display), so your dog is already settled.</li>
+          <li>Keep the volume <strong>gentle</strong> — loud enough to mask, never startling.</li>
+          <li>Use it consistently so your dog learns to associate the sound with calm and safety.</li>
+          <li>Pair it with a cosy, enclosed space where your dog feels secure.</li>
+        </ul>
+
+        <h2>One calm soundscape, on demand</h2>
+        <p>
+          LumaSleep makes it easy to keep a calming sound going — <a href="/sounds/">rain, white
+          noise, or a gentle mix</a> — with a timer and volume control, on your phone, wherever you
+          and your dog are. It&apos;s the same app you use to wind down at night, now working for
+          your best friend too.
+        </p>
+
+        <p>
+          If your dog&apos;s anxiety is severe or includes real distress when alone, please talk to
+          your vet — sound is a comfort, not a substitute for proper care.
+        </p>
+      </>
+    ),
+  },
+  {
     slug: "best-sounds-to-fall-asleep-fast",
     cover: "/blog/best-sounds-to-fall-asleep-fast.webp",
     coverAlt: "Glowing soundwaves beneath a crescent moon on a starry night — best sounds to fall asleep fast",
