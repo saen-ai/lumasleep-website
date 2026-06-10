@@ -31,7 +31,7 @@ export const SOUNDS: Landing[] = [
     slug: "rain",
     glyph: "🌧",
     h1: "Rain Sounds for Sleeping",
-    title: "Rain Sounds for Sleeping — Free in the LumaSleep App",
+    title: "Rain Sounds for Sleeping — Gentle Rain & Storms",
     description:
       "Fall asleep to gentle rain, heavy rain on a roof, and rainstorms. LumaSleep has multiple high-quality rain sounds for sleeping, with a sleep timer and mixing.",
     keywords: [
