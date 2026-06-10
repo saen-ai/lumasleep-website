@@ -34,6 +34,12 @@ export const metadata: Metadata = {
   creator: SITE.name,
   publisher: SITE.name,
   category: "health",
+  // Apple Smart App Banner — iOS Safari shows a native "View/Open" banner
+  // linking to the App Store. appArgument is passed to the app on open.
+  itunes: {
+    appId: "6759291710",
+    appArgument: SITE.url,
+  },
   keywords: [
     "sleep sounds app",
     "AI sleep sounds",
