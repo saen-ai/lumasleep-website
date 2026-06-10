@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { getAllPosts } from "@/lib/posts";
-import { getAllSounds, getAllNoise } from "@/lib/sounds";
+import { getAllSounds, getAllNoise, getAllUseCases } from "@/lib/sounds";
 
 export const dynamic = "force-static";
 
@@ -29,6 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const useCases: MetadataRoute.Sitemap = getAllUseCases().map((p) => ({
+    url: `${SITE.url}/sounds-for/${p.slug}/`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     { url: `${SITE.url}/`, lastModified, changeFrequency: "monthly", priority: 1 },
     { url: `${SITE.url}/sounds/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
@@ -36,8 +43,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/noise-generator/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.url}/ai-sleep-sounds/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.url}/sound-machine/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE.url}/sounds-for/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     ...sounds,
     ...noise,
+    ...useCases,
     { url: `${SITE.url}/blog/`, lastModified, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE.url}/support/`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     ...posts,

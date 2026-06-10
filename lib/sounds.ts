@@ -688,6 +688,251 @@ export const NOISE: Landing[] = [
   },
 ];
 
+// ── /sounds-for/ silo — use-case / intent pages ──────────────────
+// "Sounds for <goal>" — recommends which sounds help for each use case and
+// links into the /sounds and /noise silos plus the matching blog guide.
+export const USE_CASES: Landing[] = [
+  {
+    slug: "focus",
+    glyph: "🎯",
+    h1: "Sounds for Focus",
+    title: "Sounds for Focus — Background Sounds to Concentrate",
+    description:
+      "The best sounds for focus and concentration — brown noise, rain and steady ambience that mask distractions and keep you in flow. Free with LumaSleep.",
+    keywords: ["sounds for focus", "focus sounds", "background sounds for concentration", "white noise for focus", "focus music"],
+    tagline: "Block distractions, stay in flow",
+    intro:
+      "The right background sound can be the difference between an hour of real focus and an hour of checking your phone. Steady, predictable sound masks the interruptions that break concentration and gives a busy mind something neutral to settle on. Here are the best sounds for focus, and how to use them to get into flow.",
+    sections: [
+      {
+        h2: "Why sound helps you focus",
+        paras: [
+          "Distraction is usually a sound problem: a notification, a conversation, a door. A continuous background sound covers those sudden noises so they never grab your attention. Just as importantly, it gives an under-stimulated mind a steady &ldquo;floor&rdquo; to rest on, which makes it easier to stay on task.",
+          "The goal is a sound you stop noticing within a minute — present enough to mask interruptions, neutral enough to disappear.",
+        ],
+      },
+      {
+        h2: "The best sounds for focus",
+        paras: [
+          "Coloured noise is the most reliable: <a href=\"/noise/brown-noise/\">brown noise</a> is deep and calming for long sessions, while <a href=\"/noise/white-noise/\">white noise</a> masks the widest range of distractions. If flat noise feels sterile, <a href=\"/sounds/rain/\">steady rain</a> gives the same masking with a softer character.",
+          "Want a custom blend? Use the <a href=\"/noise-generator/\">noise generator</a> to layer brown noise under rain, or browse the <a href=\"/sounds/\">full sound library</a>. Start it as you begin a work block, keep the volume moderate, and pair it with a timer.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What sounds are best for focus?",
+        a: "Steady, low-variation sounds work best — brown noise, white noise, and continuous rain. They mask the sudden noises that break concentration without demanding your attention.",
+      },
+      {
+        q: "Is brown or white noise better for focus?",
+        a: "Brown noise is deeper and gentler for long sessions; white noise masks a wider range of sounds. Try both and keep whichever lets you settle into work faster.",
+      },
+    ],
+    related: ["studying", "adhd", "work"],
+    relatedPost: "best-sounds-for-focus-and-studying",
+  },
+  {
+    slug: "studying",
+    glyph: "📚",
+    h1: "Sounds for Studying",
+    title: "Sounds for Studying — Background Noise to Study Better",
+    description:
+      "Study longer and retain more with the best sounds for studying — steady noise, rain and ambient backdrops that block distractions. Free with LumaSleep.",
+    keywords: ["sounds for studying", "study sounds", "background noise for studying", "white noise for studying", "study music"],
+    tagline: "Study longer, retain more",
+    intro:
+      "Whether you&apos;re cramming for an exam or grinding through a reading list, the right background sound helps you study longer and absorb more. It blocks the distractions of a library, dorm, or café, and keeps your attention anchored on the page. Here are the best sounds for studying.",
+    sections: [
+      {
+        h2: "Why students study better with sound",
+        paras: [
+          "Silence sounds ideal but rarely is — every cough, chair scrape, and whispered conversation pulls your focus. A consistent background sound masks all of it, turning an unpredictable environment into a calm, steady one your brain can ignore.",
+          "Avoid anything with lyrics while reading or writing — words compete for the same part of your brain you&apos;re using to study.",
+        ],
+      },
+      {
+        h2: "The best sounds for studying",
+        paras: [
+          "<a href=\"/noise/white-noise/\">White noise</a> and <a href=\"/noise/brown-noise/\">brown noise</a> are the most effective for masking a noisy study space. For longer sessions, <a href=\"/sounds/rain/\">rain</a> or nature ambience feels easier on the ears, and lo-fi or instrumental focus music adds gentle momentum without distracting words.",
+          "Build a mix in the <a href=\"/noise-generator/\">noise generator</a>, set a study timer, and let the sound carry you through each block.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What's the best sound for studying?",
+        a: "White or brown noise for masking a noisy environment, rain or nature for longer sessions, and lyric-free lo-fi or instrumental music for momentum. Avoid music with words while reading or writing.",
+      },
+      {
+        q: "Does background noise really help studying?",
+        a: "For most people, yes — a steady sound masks unpredictable distractions and helps maintain concentration. The key is keeping it consistent and at a moderate volume.",
+      },
+    ],
+    related: ["focus", "adhd", "work"],
+    relatedPost: "best-sounds-for-focus-and-studying",
+  },
+  {
+    slug: "adhd",
+    glyph: "🧠",
+    h1: "Sounds for ADHD",
+    title: "Sounds for ADHD — Brown Noise & Focus Sounds",
+    description:
+      "Brown noise, white noise and steady ambience that many people with ADHD use to focus and feel calmer. Try sounds for ADHD free with LumaSleep.",
+    keywords: ["sounds for adhd", "brown noise for adhd", "white noise for adhd", "adhd focus sounds", "adhd background noise"],
+    tagline: "Calm the noise, find focus",
+    intro:
+      "If your attention bounces from one thing to the next, you&apos;re not alone — and many people with ADHD find that the right background sound genuinely helps them focus and feel calmer. Brown noise in particular has become a favourite. Here&apos;s what works and how to use it.",
+    sections: [
+      {
+        h2: "Why sound helps ADHD focus",
+        paras: [
+          "Two things make background sound useful for ADHD: it <strong>masks distractions</strong> so sudden noises can&apos;t hijack your attention, and it feeds an under-stimulated mind a steady stream of input, which can make it easier to settle into a task instead of seeking new stimulation.",
+          "The research is still early, so treat this as a helpful, low-risk tool to experiment with — not a treatment.",
+        ],
+      },
+      {
+        h2: "The best sounds for ADHD",
+        paras: [
+          "<a href=\"/noise/brown-noise/\">Brown noise</a> is the standout — its deep, warm rumble is calming over long stretches. <a href=\"/noise/white-noise/\">White noise</a> is brighter and masks more, and steady <a href=\"/sounds/rain/\">rain</a> is a gentler natural option. For a deeper dive, read our guide on <a href=\"/blog/brown-noise-for-adhd/\">brown noise for ADHD</a>.",
+          "Play it through headphones at a moderate volume, start it as you begin a focus block, and give it a few sessions to become your &ldquo;focus mode&rdquo; cue.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is brown noise good for ADHD?",
+        a: "Many people with ADHD report that brown noise helps them focus and feel calmer by masking distractions and giving an under-stimulated mind something steady to lock onto. It isn't a treatment, but it's a free, low-risk thing to try.",
+      },
+      {
+        q: "White or brown noise for ADHD?",
+        a: "Brown noise is deeper and gentler for long sessions; white noise masks a wider range of sounds. Try both for a few days each and keep whichever helps you settle into work faster.",
+      },
+    ],
+    related: ["focus", "anxiety", "studying"],
+    relatedPost: "brown-noise-for-adhd",
+  },
+  {
+    slug: "anxiety",
+    glyph: "🌿",
+    h1: "Sounds for Anxiety",
+    title: "Sounds for Anxiety — Calming Sounds for Stress Relief",
+    description:
+      "Calming sounds for anxiety and stress relief — rain, ocean and gentle noise that quiet a racing mind and help you feel safe. Free with LumaSleep.",
+    keywords: ["sounds for anxiety", "calming sounds for anxiety", "white noise for anxiety", "sounds for stress", "relaxing sounds"],
+    tagline: "Quiet a racing mind",
+    intro:
+      "Anxiety loves silence — it fills the quiet with worry on a loop. The right sound interrupts that loop, giving your attention somewhere calm to rest and helping your nervous system settle. Here are the best sounds for anxiety and stress relief.",
+    sections: [
+      {
+        h2: "How sound calms anxiety",
+        paras: [
+          "A steady, gentle sound does two things at once: it masks the sudden noises that keep an anxious nervous system on alert, and it gives racing thoughts a neutral anchor. Together that helps shift your body out of fight-or-flight and into a calmer, rest-and-digest state.",
+          "Pair the sound with slow breathing — inhale for four, exhale for six — and let it carry your attention.",
+        ],
+      },
+      {
+        h2: "The best sounds for anxiety",
+        paras: [
+          "<a href=\"/sounds/rain/\">Rain</a> and <a href=\"/sounds/ocean/\">ocean waves</a> are the go-to — soft, continuous, and naturally soothing. <a href=\"/noise/white-noise/\">White or pink noise</a> helps when you need to block out a noisy, unpredictable environment. For more, read our guide to the <a href=\"/blog/best-sounds-for-anxiety/\">best sounds for anxiety</a>.",
+          "Keep the volume low and steady — calming sounds work by fading into the background, not drowning everything out.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What sounds help with anxiety?",
+        a: "Slow, steady, natural sounds calm anxiety best — rain, ocean waves, gentle wind, and soft white or pink noise. They mask jarring noise and give a racing mind something steady to focus on.",
+      },
+      {
+        q: "Can sounds replace treatment for anxiety?",
+        a: "No. Calming sounds are a helpful self-soothing tool, not a treatment. If anxiety is affecting your daily life, please talk to a healthcare professional.",
+      },
+    ],
+    related: ["relaxation", "adhd", "focus"],
+    relatedPost: "best-sounds-for-anxiety",
+  },
+  {
+    slug: "relaxation",
+    glyph: "🧘",
+    h1: "Sounds for Relaxation",
+    title: "Sounds for Relaxation — Calming Ambient Soundscapes",
+    description:
+      "Unwind with the best sounds for relaxation — rain, ocean, nature and gentle music to ease stress and slow a busy mind. Free with LumaSleep.",
+    keywords: ["sounds for relaxation", "relaxing sounds", "calming sounds", "sounds to relax", "relaxation music"],
+    tagline: "Unwind and let go",
+    intro:
+      "After a long day, the right soundscape helps you actually switch off — easing tension, slowing a busy mind, and creating a pocket of calm wherever you are. Here are the best sounds for relaxation and how to build your wind-down.",
+    sections: [
+      {
+        h2: "Why sound helps you relax",
+        paras: [
+          "Relaxation is partly about lowering your arousal level, and steady natural sound is one of the easiest ways to do it. Gentle, predictable audio signals safety to the brain, masks stressful background noise, and gives your attention a calm place to rest instead of racing.",
+        ],
+      },
+      {
+        h2: "The best sounds for relaxation",
+        paras: [
+          "<a href=\"/sounds/rain/\">Rain</a>, <a href=\"/sounds/ocean/\">ocean waves</a>, and <a href=\"/sounds/fire/\">a crackling fire</a> are timeless for unwinding, as is gentle nature ambience. If you prefer something with a little melody, calming <a href=\"/sounds/sleep-music/\">sleep music</a> works beautifully.",
+          "Mix a few together, dim the lights, and set a fade-out timer so the sound eases off as you relax — or generate your own scene in the <a href=\"/ai-sleep-sounds/\">AI Sound Studio</a>.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What are the best sounds to relax to?",
+        a: "Rain, ocean waves, a crackling fire, and gentle nature sounds are the most popular for relaxation, along with soft, slow music. Choose whatever feels most soothing to you and keep the volume low.",
+      },
+      {
+        q: "How do I use sounds to wind down?",
+        a: "Dim the lights, start a calming sound at a low volume, and pair it with slow breathing or a quiet activity. A fade-out timer lets the sound ease off naturally as you relax.",
+      },
+    ],
+    related: ["anxiety", "focus", "work"],
+    relatedPost: "best-sounds-to-fall-asleep-fast",
+  },
+  {
+    slug: "work",
+    glyph: "💼",
+    h1: "Sounds for Work",
+    title: "Sounds for Work — White Noise to Focus & Block Chatter",
+    description:
+      "Block office chatter and stay focused with the best sounds for work — white noise, brown noise and ambient mixes. Free with LumaSleep.",
+    keywords: ["sounds for work", "white noise for work", "office background noise", "focus sounds for work", "background noise for working"],
+    tagline: "Block chatter, get work done",
+    intro:
+      "The biggest focus-killer at work isn&apos;t noise in general — it&apos;s overheard conversation, which your brain can&apos;t help but follow. The fix is to mask it. Here are the best sounds for work, whether you&apos;re in an open-plan office or working from home.",
+    sections: [
+      {
+        h2: "Why sound beats office chatter",
+        paras: [
+          "Speech is distracting because of the gaps between words — your brain fills them in. <a href=\"/noise/white-noise/\">White noise</a> covers the same frequency range as conversation, smoothing it into an indistinct hum so your concentration stays put.",
+          "Use headphones in shared spaces, and keep the volume moderate — you should still hear someone say your name.",
+        ],
+      },
+      {
+        h2: "The best sounds for work",
+        paras: [
+          "White noise is the most effective for masking chatter; <a href=\"/noise/brown-noise/\">brown noise</a> or a fan hum is warmer for a full day; and <a href=\"/sounds/rain/\">steady rain</a> or a café ambience feels more natural. See our guide to <a href=\"/blog/white-noise-for-office/\">white noise for the office</a> for more.",
+          "Build a custom work mix in the <a href=\"/noise-generator/\">noise generator</a> and switch it up through the day so it never gets stale.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What's the best sound to block office noise?",
+        a: "White noise (or a fan-like hum) is most effective at masking nearby conversation, since it covers the speech frequency range. If it feels harsh, steady rain or a café ambience works well over a full workday.",
+      },
+      {
+        q: "Is it OK to wear headphones with white noise all day at work?",
+        a: "Generally yes, at a moderate volume. A simple rule: if you can't hold a normal conversation over it, or your ears feel tired, turn it down.",
+      },
+    ],
+    related: ["focus", "studying", "adhd"],
+    relatedPost: "white-noise-for-office",
+  },
+];
+
 // ── Lookup helpers ───────────────────────────────────────────────
 export function getAllSounds(): Landing[] {
   return SOUNDS;
@@ -700,4 +945,10 @@ export function getAllNoise(): Landing[] {
 }
 export function getNoise(slug: string): Landing | undefined {
   return NOISE.find((n) => n.slug === slug);
+}
+export function getAllUseCases(): Landing[] {
+  return USE_CASES;
+}
+export function getUseCase(slug: string): Landing | undefined {
+  return USE_CASES.find((u) => u.slug === slug);
 }

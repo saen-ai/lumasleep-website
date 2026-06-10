@@ -10,12 +10,15 @@ export function LandingPage({
   page,
   hub,
   siblings,
+  relatedLabel = "Related sounds",
 }: {
   page: Landing;
   // The silo this page belongs to, for the breadcrumb + back link.
   hub: { label: string; path: string };
   // Resolved sibling pages for the "related" cross-links.
   siblings: { slug: string; h1: string; glyph: string; tagline: string }[];
+  // Heading for the related-pages grid (e.g. "Related use cases").
+  relatedLabel?: string;
 }) {
   const base = hub.path; // e.g. "/sounds" or "/noise"
 
@@ -124,7 +127,7 @@ export function LandingPage({
           {/* Related */}
           {siblings.length > 0 && (
             <div className="mt-12">
-              <h2 className="font-display text-xl">Related sounds</h2>
+              <h2 className="font-display text-xl">{relatedLabel}</h2>
               <div className="mt-4 grid gap-3 sm:grid-cols-3">
                 {siblings.map((s) => (
                   <a
