@@ -6,6 +6,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Promo } from "@/components/sections/Promo";
 import { Features } from "@/components/sections/Features";
 import { Sounds } from "@/components/sections/Sounds";
+import { UseCases } from "@/components/sections/UseCases";
 import { Studio } from "@/components/sections/Studio";
 import { Community } from "@/components/sections/Community";
 import { Sleep } from "@/components/sections/Sleep";
@@ -23,6 +24,7 @@ export default function Home() {
         <Promo />
         <Features />
         <Sounds />
+        <UseCases />
         <Studio />
         <Community />
         <Sleep />
