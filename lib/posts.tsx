@@ -97,7 +97,8 @@ const POSTS: Post[] = [
           brown noise under <a href="/sounds/">rain or a fan</a> for extra texture, or use the AI
           Sound Studio to <a href="/ai-sleep-sounds/">describe and generate your own focus
           soundscape</a> — the exact blend that quiets your mind. Set a timer, press play, and let
-          the noise do the heavy lifting while you work.
+          the noise do the heavy lifting while you work. For more, see our roundup of{" "}
+          <a href="/sounds-for/adhd/">sounds for ADHD</a>.
         </p>
       </>
     ),
@@ -164,7 +165,8 @@ const POSTS: Post[] = [
           The most calming sound is the one that feels safe to <em>you</em> — and that&apos;s
           rarely a single preset. With LumaSleep you can mix rain with distant thunder, or
           <a href="/ai-sleep-sounds/"> describe your own calming soundscape</a> and let AI create
-          it. Set a timer, breathe, and let the noise settle your mind.
+          it. Set a timer, breathe, and let the noise settle your mind. See more{" "}
+          <a href="/sounds-for/anxiety/">sounds for anxiety</a>.
         </p>
 
         <p>
@@ -308,7 +310,8 @@ const POSTS: Post[] = [
           One flat track gets old by 3pm. With LumaSleep you can{" "}
           <a href="/noise-generator/">build your own background mix</a> — say, white noise under
           light rain — or browse <a href="/sounds/">dozens of focus sounds</a> and switch it up
-          through the day. Same app for deep work by day and winding down at night.
+          through the day. Same app for deep work by day and winding down at night. See our
+          roundup of <a href="/sounds-for/work/">sounds for work</a>.
         </p>
       </>
     ),
@@ -949,7 +952,8 @@ const POSTS: Post[] = [
         <p>
           LumaSleep includes focus music, lo-fi, and <a href="/noise/">coloured-noise tracks</a> alongside its
           sleep library, so the same app that helps you wind down at night can help you lock
-          in during the day.
+          in during the day. Explore <a href="/sounds-for/focus/">sounds for focus</a> and{" "}
+          <a href="/sounds-for/studying/">studying</a>.
         </p>
       </>
     ),
