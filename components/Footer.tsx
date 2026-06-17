@@ -1,10 +1,16 @@
 import { Logo } from "./Brand";
 import { SITE } from "@/lib/site";
 
+// Sitewide footer links. Every standalone landing page lives here so it gets a
+// crawlable inbound link from every page — prevents "Discovered – not indexed"
+// orphans (e.g. /sound-machine/ previously had no inbound links at all).
 const FOOTER_LINKS = [
   { label: "Sleep Sounds", href: "/sounds/" },
   { label: "Noise Colours", href: "/noise/" },
   { label: "Sounds for…", href: "/sounds-for/" },
+  { label: "AI Sleep Sounds", href: "/ai-sleep-sounds/" },
+  { label: "Noise Generator", href: "/noise-generator/" },
+  { label: "Sound Machine", href: "/sound-machine/" },
   { label: "Blog", href: "/blog/" },
   { label: "Privacy Policy", href: "/privacy/" },
   { label: "Terms of Service", href: "/terms/" },
