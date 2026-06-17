@@ -1,7 +1,7 @@
 import { SITE, FAQS } from "./site";
 
-// Absolute URL helper — SITE.url already includes the GitHub Pages project
-// path, so everything here points at the real deployed location.
+// Absolute URL helper — SITE.url is the canonical deployed origin (Vercel,
+// www.lumasleep.ai), so everything here points at the real live location.
 export const abs = (path = "/") => `${SITE.url}${path}`;
 
 // ── JSON-LD structured data ───────────────────────────────────────
@@ -34,11 +34,9 @@ export const softwareApplicationLd = {
   url: SITE.url,
   downloadUrl: SITE.appStoreUrl,
   installUrl: SITE.appStoreUrl,
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-  },
+  // No `offers` block: the app has a Premium subscription, so declaring a
+  // fixed price (or "0") in schema would be inaccurate. Omitting it is honest
+  // and avoids misleading price rich-results.
   publisher: {
     "@type": "Organization",
     name: SITE.name,

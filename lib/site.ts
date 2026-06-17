@@ -10,6 +10,9 @@ export const SITE = {
     "A sleep sounds app with 70+ ambient sounds, AI-generated soundscapes, white noise, sleep tracking and a creative community — your calm bedtime companion.",
   email: "support@lumasleep.ai",
   url: "https://www.lumasleep.ai",
+  // Editorial byline for blog articles (honest team attribution — no
+  // fabricated person or credentials, which matters for health-adjacent content).
+  authorName: "The LumaSleep Team",
   appStoreUrl: "https://apps.apple.com/app/luma-sleep/id6759291710",
 } as const;
 

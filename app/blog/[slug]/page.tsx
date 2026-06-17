@@ -6,8 +6,9 @@ import { Reveal } from "@/components/Reveal";
 import { StoreButtons } from "@/components/Brand";
 import { JsonLd } from "@/components/JsonLd";
 import { ArrowRightIcon } from "@/components/icons";
-import { getAllSlugs, getPost, formatDate } from "@/lib/posts";
+import { getAllSlugs, getPost, getRelatedPosts, formatDate } from "@/lib/posts";
 import { abs, articleLd, breadcrumbLd, faqPageLd } from "@/lib/seo";
+import { SITE } from "@/lib/site";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -50,6 +51,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const post = getPost(slug);
   if (!post) notFound();
 
+  const related = getRelatedPosts(post.slug);
+
   const crumbs = [
     { name: "Home", path: "/" },
     { name: "Blog", path: "/blog/" },
@@ -81,7 +84,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </Reveal>
             <Reveal delay={80}>
               <p className="mt-4 text-[0.8rem] uppercase tracking-wider text-cedar">
-                {formatDate(post.date)} · {post.readingMinutes} min read
+                By {SITE.authorName} · {formatDate(post.date)} · {post.readingMinutes} min read
               </p>
             </Reveal>
 
@@ -117,6 +120,50 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 </section>
               </Reveal>
             ) : null}
+
+            {/* Author / trust — honest team attribution + wellness disclaimer (E-E-A-T) */}
+            <div
+              className="mt-12 flex gap-4 rounded-2xl p-5"
+              style={{ border: "1px solid rgba(255,255,255,0.1)" }}
+            >
+              <div
+                className="h-11 w-11 shrink-0 rounded-full"
+                style={{ background: "linear-gradient(160deg, #6C63FF, #f0a868)" }}
+                aria-hidden="true"
+              />
+              <div>
+                <p className="font-medium text-linen">Written by {SITE.authorName}</p>
+                <p className="mt-1 text-[0.9rem] leading-relaxed text-cedar">
+                  {SITE.name} is a sleep-sounds and sleep-tracking app. Our guides are for
+                  general wellness and education — they aren&apos;t medical advice. If sleep
+                  problems persist, please consult a healthcare professional.
+                </p>
+              </div>
+            </div>
+
+            {/* Related guides — internal linking + topical clustering */}
+            {related.length > 0 && (
+              <section className="mt-14">
+                <h2 className="font-display text-2xl">Related guides</h2>
+                <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                  {related.map((r) => (
+                    <a key={r.slug} href={`/blog/${r.slug}/`} className="group block h-full">
+                      <article
+                        className="glass flex h-full flex-col rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1"
+                        style={{ borderColor: "rgba(255,255,255,0.1)" }}
+                      >
+                        <div className="text-[0.7rem] uppercase tracking-wider text-cedar">
+                          {r.readingMinutes} min read
+                        </div>
+                        <h3 className="mt-2 font-display text-base leading-snug text-linen">
+                          {r.title}
+                        </h3>
+                      </article>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* CTA */}
             <div

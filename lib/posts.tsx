@@ -1449,6 +1449,21 @@ export function getAllSlugs(): string[] {
   return POSTS.map((p) => p.slug);
 }
 
+// Related guides for a post: ranked by shared-keyword overlap, then by recency.
+// Drives the "Related guides" block on each article (internal linking / topical
+// clustering). Always returns up to `limit` posts so the section never renders empty.
+export function getRelatedPosts(slug: string, limit = 3): Post[] {
+  const current = getPost(slug);
+  if (!current) return [];
+  const keys = new Set(current.keywords);
+  return [...POSTS]
+    .filter((p) => p.slug !== slug)
+    .map((p) => ({ post: p, score: p.keywords.filter((k) => keys.has(k)).length }))
+    .sort((a, b) => b.score - a.score || (a.post.date < b.post.date ? 1 : -1))
+    .slice(0, limit)
+    .map((x) => x.post);
+}
+
 export function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString("en-CA", {
     year: "numeric",
