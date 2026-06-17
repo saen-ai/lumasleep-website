@@ -38,7 +38,7 @@ export function Footer() {
             {SITE.email}
           </a>
         </p>
-        <p className="text-[0.8rem] text-cedar/70">
+        <p className="text-[0.8rem] text-cedar">
           © {new Date().getFullYear()} {SITE.name}. All rights reserved.
         </p>
       </div>

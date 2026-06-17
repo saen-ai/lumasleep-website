@@ -14,6 +14,8 @@ export const SITE = {
   // fabricated person or credentials, which matters for health-adjacent content).
   authorName: "The LumaSleep Team",
   appStoreUrl: "https://apps.apple.com/app/luma-sleep/id6759291710",
+  playStoreUrl:
+    "https://play.google.com/store/apps/details?id=co.getsnippet.dreamsound",
 } as const;
 
 // Section anchors are prefixed with "/" so they work from any page (blog,
